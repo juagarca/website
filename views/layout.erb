@@ -14,12 +14,37 @@
   <body>
       <!-- <div class="row"> -->
         <!-- <div class="col-sm-8 col-sm-offset-2"> -->
-    <div class="navbar"></div>
-          <%= yield %>
+    <div class="app">
+      <div class="sidebar">
+        <div class="content">
+          <img class="avatar" src="https://avatars0.githubusercontent.com/u/50845767?s=460&u=082543d477f8110f2f915cdee9a59ca541df68cd&v=4" alt="juagarca's avatar">
+          <h3>Software Engineer</h2>
+          <p>London</p>
+        </div>
+      </div>
+
+      <div class="navbar-juagarca">
+        <ul class="items">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">CV</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <%= yield %>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <script src="/application.js"></script>
   </body>
 </html>

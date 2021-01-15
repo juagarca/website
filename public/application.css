@@ -3,13 +3,30 @@ body {
   background-color: black;
 }
 
+p {
+  font-size: 16px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color:rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
 /*Components*/
+
+.app {
+  display: flex;
+}
 
 .avatar {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  /*border: 2px solid rgba(255, 255, 255, 0.2);*/
 }
 
 .sidebar {
@@ -17,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 296px;
-  height: 87vh;
+  height: 95vh;
   margin: 16px 0;
   background-color: black;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -27,15 +44,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 250px;
+  width: 500px;
 }
 
-.navbar {
+/*Navbar*/
+
+.navbar-juagarca {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin: 0 16px;
   height: 8vh;
+  width: 100%;
   background-color: black;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
 }
 
+.items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid red;
+}
 
+.items > li {
+  color: black;
+  margin: 16px 24px;
+  border-bottom: 1px solid red;
+}
+
+/*.items > li:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}*/
 
