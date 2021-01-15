@@ -1,0 +1,22 @@
+body {
+  color: #C6CBD2;
+  background-color: black;
+}
+
+/*Components*/
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid #C6CBD2;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid #C6CBD2;
+}
