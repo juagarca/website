@@ -33,17 +33,53 @@ a:visited {
   color:rgba(255, 255, 255, 0.4);
 }
 
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 95vh;
+  margin: 16px 0 16px 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  /*background-color:orange;*/
+}
+
 .right-side {
   display: flex;
+  width: 80%;
   flex-direction: column;
-  width: 78%;
+  /*border-left: 1px solid rgba(255, 255, 255, 0.3);*/
+  /*background-color: red;*/
 }
 
 .content {
-  margin: 16px 0;
+  display: flex;
+  /*background-color: blue;*/
+}
+
+.main {
   height: 87vh;
-  width: 75%;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+/*  background-color: green;
+*/margin: 16px 8px 16px 16px;
+  width: 72%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+/*  background-color: yellow;
+*/  width: 25%;
+  margin: 16px 16px 16px 8px;
+}
+
+.card-1 {
+  border: 1px solid black;
+}
+
+.card-2 {
+  border: 1px solid black;
 }
 
 .big-icon {
@@ -63,22 +99,13 @@ a:visited {
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.sidebar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 95vh;
-  margin: 16px 0;
-  background-color: black;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .sidebar .content-side {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  justify-content: center;
+  /*width: 90%;*/
+  height: 60%;
 }
 
 
@@ -90,7 +117,7 @@ a:visited {
   align-items: center;
   margin: 0 16px;
   height: 8vh;
-  width: 100%;
+  /*width: 100%;*/
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
