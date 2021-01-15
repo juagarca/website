@@ -16,35 +16,40 @@
         <!-- <div class="col-sm-8 col-sm-offset-2"> -->
     <div class="app">
       <div class="sidebar">
-        <div class="content">
+        <div class="content-side">
           <img class="avatar" src="https://avatars0.githubusercontent.com/u/50845767?s=460&u=082543d477f8110f2f915cdee9a59ca541df68cd&v=4" alt="juagarca's avatar">
           <h3>Software Engineer</h2>
           <p>London</p>
-          <ul>
-            <li>LinkedIn</li>
-            <li>Github</li>
-            <li>Email</li>
+          <ul class="contact">
+            <li>
+              <a href="">LinkedIn</a>
+            </li>
+            <li>
+              <a href="">Github</a>
+            </li>
+            <li>
+              <a href="">Email</a>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div class="navbar-juagarca">
-        <ul class="items">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">CV</a>
-          </li>
-        </ul>
+      <div class="right-side">
+        <div class="navbar-juagarca">
+          <ul class="items">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">CV</a>
+            </li>
+          </ul>
+        </div>
+        <%= yield %>
       </div>
-    </div>
-
-    <%= yield %>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

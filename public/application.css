@@ -1,9 +1,13 @@
+* {
+margin: 0;
+padding: 0;
+border: none;
+list-style-type: none;
+}
+
 body {
   color: white;
   background-color: black;
-}
-
-p {
   font-size: 16px;
 }
 
@@ -12,10 +16,31 @@ a {
 }
 
 a:hover {
-  color:rgba(255, 255, 255, 0.2);
+  color:rgba(255, 255, 255, 0.4);
+}
+
+a:link {
   text-decoration: none;
 }
 
+
+a:visited {
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.4);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+}
+
+.content {
+  margin: 16px 0;
+  height: 87vh;
+  width: 75%;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
 /*Components*/
 
 .app {
@@ -33,19 +58,24 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 296px;
+  width: 20%;
   height: 95vh;
   margin: 16px 0;
   background-color: black;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.sidebar .content {
+.sidebar .content-side {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 500px;
 }
+
+.contact li {
+  display: inline;
+}
+
 
 /*Navbar*/
 
@@ -56,8 +86,7 @@ a:hover {
   margin: 0 16px;
   height: 8vh;
   width: 100%;
-  background-color: black;
-  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .items {
@@ -67,6 +96,8 @@ a:hover {
 }
 
 .items > li {
-  color: black;
-  margin: 8px 0 8px 16px;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
 }
+
+
