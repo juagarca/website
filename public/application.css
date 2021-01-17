@@ -73,9 +73,10 @@ a:visited {
   margin: 16px 16px 16px 8px;
 }
 
-.music-card {
+.music-card h4 {
   /*background-color: white;*/
-  /*margin: 8px;*/
+  margin-left: 8px;
+  margin-top: 0;
 }
 
 .song-card {
@@ -102,11 +103,17 @@ a:visited {
 }
 
 .card-2 {
-  border: 1px solid black;
+  margin: 0 8px 16px 8px;
 }
 
-.big-icon {
-  font-size: 24px;
+.card-2 h4 {
+  /*background-color: white;*/
+
+}
+
+.card-2-content {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 192px;
 }
 
 /*Components*/
@@ -130,6 +137,9 @@ a:visited {
   height: 60%;
 }
 
+.big-icon {
+  font-size: 24px;
+}
 
 /*Navbar*/
 
