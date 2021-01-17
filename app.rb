@@ -14,9 +14,20 @@ get '/' do
   html_content = open('https://www.last.fm/user/Darin86').read
   doc = Nokogiri::HTML(html_content)
 
-  @songs = doc.search('.chartlist-name').each do |song|
-    song.text
+  @songs = []
+
+  doc.search('.chartlist-row').first(10).each do |row|
+    title = row.at('.chartlist-name').children[1].attributes['title'].value
+    artist = row.at('.chartlist-artist').children[1].attributes['title'].value
+    time = row.at('.chartlist-timestamp').children[1].children.text.strip
+
+    @songs << {
+      title: title,
+      artist: artist,
+      time: time
+    }
   end
+
   erb :index
 end
 
