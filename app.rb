@@ -21,6 +21,8 @@ get '/' do
     artist = row.at('.chartlist-artist').children[1].attributes['title'].value
     time = row.at('.chartlist-timestamp').children[1].children.text.strip
 
+    time = 'Listening now' if time.include?('Scrobbling')
+
     @songs << {
       title: title,
       artist: artist,
