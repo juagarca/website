@@ -2,6 +2,8 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'pry-byebug'
 require 'better_errors'
+require 'nokogiri'
+require 'open-uri'
 
 configure :development do
   use BetterErrors::Middleware
