@@ -60,7 +60,7 @@ a:visited {
   height: 87vh;
 /*  background-color: green;
 */margin: 16px 8px 16px 16px;
-  width: 72%;
+  width: 70%;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 
 }
@@ -69,12 +69,36 @@ a:visited {
   display: flex;
   flex-direction: column;
 /*  background-color: yellow;
-*/  width: 25%;
+*/width: 30%;
   margin: 16px 16px 16px 8px;
 }
 
-.card-1 {
-  border: 1px solid black;
+.music-card {
+  /*background-color: white;*/
+  /*margin: 8px;*/
+}
+
+.song-card {
+  /*background-color: red;*/
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  margin: 8px;
+  height: 56px;
+  align-items: ;
+}
+
+.song-image {
+  width: 56px;
+  height: 56px;
+}
+
+.song-info {
+  margin: 0 0 0 8px;
+}
+
+.song-info p {
+  font-size: 13px;
+  margin: 0 !important;
 }
 
 .card-2 {

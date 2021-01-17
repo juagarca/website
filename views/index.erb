@@ -3,11 +3,25 @@
     <p>main</p>
   </div>
   <div class="right-sidebar">
-    <div class="card-1">
-      <% @songs.each_with_index do |song, index| %>
-        <small><%="#{index + 1}. #{song[:title]} by #{song[:artist]} | #{song[:time]}" %></small><br>
-      <% end %>
-    </div>
+    <div class="music-card">
+      <% if @songs %>
+        <% @songs.each_with_index do |song, index| %>
+          <div class="song-card">
+            <% url = song[:image] %>
+
+            <div class="song-image" style='background-image: url(<%= url %>);'></div>
+
+            <div class="song-info">
+              <p><%= "#{song[:title]}" %></p>
+              <p><%= "by #{song[:artist]}" %></p>
+              <p><em><%= "#{song[:time]}" %></em></p><br>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <p>Content unavailable...</p>
+    <% end %>
     <div class="card-2">
       card2
     </div>
