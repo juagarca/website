@@ -11,6 +11,12 @@ configure :development do
 end
 
 get '/' do
+  html_content = open('https://www.last.fm/user/Darin86').read
+  doc = Nokogiri::HTML(html_content)
+
+  @songs = doc.search('.chartlist-name').each do |song|
+    song.text
+  end
   erb :index
 end
 

@@ -4,7 +4,9 @@
   </div>
   <div class="right-sidebar">
     <div class="card-1">
-      card1
+      <% @songs.each_with_index do |song, index| %>
+        <p><%= "#{index + 1}. #{song}" %></p>
+      <% end %>
     </div>
     <div class="card-2">
       card2
