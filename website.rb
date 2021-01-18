@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'pry-byebug'
 require 'better_errors'
-# require 'nokogiri'
+require 'nokogiri'
 require 'open-uri'
 
 configure :development do
@@ -14,8 +14,7 @@ get '/' do
   # Lastfm url to scrape
   url = 'https://www.last.fm/user/Darin86'
   html_content = open(url).read
-  # doc = Nokogiri::HTML(html_content)
-  doc =""
+  doc = Nokogiri::HTML(html_content)
 
   @songs = []
   # Scanning first 5 songs
