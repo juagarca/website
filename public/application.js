@@ -1,5 +1,5 @@
 const apiKey = '9003b582cac1084f57538941e2c6ba19';
-const cities = ["London", "Mykonos", "Gran Canaria", "Berlin", "Tel Aviv", "New York", "San Francisco", "Los Angeles"];
+const cities = ["London", "Mykonos", "Gran Canaria", "Berlín", "Tel Aviv", "New York", "San Francisco", "Los Angeles"];
 
 const buildHTML = (city, weather, description, iconUrl, temp) => {
   // document.querySelector(".card-2-content").insertAdjacentHTML('beforeend', `<img src=${iconUrl} alt="weather">`);
