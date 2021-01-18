@@ -51,6 +51,16 @@ a:visited {
   /*background-color: red;*/
 }
 
+.city-card {
+  display:flex;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.city-info {
+  display:flex;
+  flex-direction: column;
+}
+
 .content {
   display: flex;
   /*background-color: blue;*/
