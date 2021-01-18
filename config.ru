@@ -1,2 +1,2 @@
-require 'app'
+require './website'
 run Sinatra::Application
