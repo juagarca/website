@@ -1,3 +1,3 @@
-require_relative './app'
+require './website'
 
 run Sinatra::Application
