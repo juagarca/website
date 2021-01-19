@@ -13,7 +13,7 @@ end
 get '/' do
   # Lastfm url to scrape
   url = 'https://www.last.fm/user/Darin86'
-  html_content = open(url).read
+  html_content = URI.open(url).read
   doc = Nokogiri::HTML(html_content)
 
   @songs = []
