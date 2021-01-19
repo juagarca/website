@@ -15,6 +15,7 @@ get '/' do
   url = 'https://www.last.fm/user/Darin86'
   html_content = open(url).read
   doc = Nokogiri::HTML(html_content)
+
   @songs = []
   # Scanning first 5 songs
   doc.search('.chartlist-row').first(5).each do |row|
