@@ -98,7 +98,8 @@ a:visited {
   align-items: center;
   width: 20%;
   height: 95vh;
-  margin: 16px 0 16px 16px;
+  padding: 16px 16px 16px 16px;
+  margin: 16px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   /*background-color:orange;*/
 }
@@ -114,19 +115,36 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 60%;
+  /*justify-content: center;*/
+  /*height: 60%;*/
+}
+
+.content-side h3 {
+  padding-bottom: 8px;
 }
 
 .big-icon {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .tools-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 8px;
-  margin: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 250px;
+}
+
+.tools-card h4 {
+  margin: 24px 0;
+}
+
+.tools {
+  display: inline-grid;;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 257px;
+}
+
+.tools-card .tools img {
+  width: 42px;
 }
 
 
