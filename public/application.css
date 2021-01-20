@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-  color:rgba(255, 255, 255, 0.4);
+  color: white;
 }
 
 a:link {
@@ -25,12 +25,12 @@ a:link {
 
 a:focus {
   text-decoration: none;
-  color:rgba(255, 255, 255, 0.4);
+  color: white;
 }
 
 a:visited {
   text-decoration: none;
-  color:rgba(255, 255, 255, 0.4);
+  color: white;
 }
 
 /*Layout*/
@@ -67,6 +67,22 @@ a:visited {
   margin: 16px 16px 16px 8px;
 }
 
+.button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.4);
+  padding: 8px;
+  margin: 0 0 0 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button:hover {
+  transition: all 0.4s ease;
+  border: 1px solid white;
+  color: white;
+  background: black;
+}
+
 /*Navbar*/
 
 .navbar-juagarca {
@@ -81,13 +97,11 @@ a:visited {
 
 .items {
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin: 2px;
 }
 
 .items > li {
-  color: rgba(255, 255, 255, 0.2);
-  padding: 10px;
+  font-size: 18px;
 }
 
 /*Left-Sidebar*/
@@ -106,20 +120,29 @@ a:visited {
 
 .top-section {
   display: flex;
-  /*height: 60%;*/
+  height: 35%;
   margin-bottom: 16px;
-  align-items: flex-end;
+  margin-left: 16px;
 }
 
 .avatar {
   height: 88px;
   width: 88px;
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar:hover {
+  transition: all 0.6s ease;
   border: 1px solid white;
 }
 
 .info h2, p {
-  margin: 0 0 0 8px;
+  margin: 0 0 2px 8px;
+}
+
+.info p {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .big-icon {
@@ -132,7 +155,7 @@ a:visited {
 }
 
 .tools-card h4 {
-  margin-top: 16px;
+  margin: 16px 0;
 }
 
 .tools {
@@ -144,6 +167,12 @@ a:visited {
 
 .tools-card .tools img {
   width: 42px;
+  opacity: 0.5;
+}
+
+.tools-card .tools img:hover {
+  opacity: 1;
+  transition: all 0.4s ease;
 }
 
 
@@ -160,7 +189,15 @@ a:visited {
   display: flex;
   margin: 8px;
   height: 50px;
+  color: rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.song-card:hover {
+  transition: all 0.4s ease;
+  color: white;
+  background: black;
 }
 
 .song-image {
@@ -169,7 +206,6 @@ a:visited {
   background-size: cover;
   background-position: center;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .song-info {
@@ -201,26 +237,35 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 8px;
-  margin: 0 8px;
+  margin: 8px 8px 0 8px;
 }
 
 .city-card {
   display: flex;
+  color: rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.2);
   height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.city-card:hover {
+  transition: all 0.4s ease;
+  color: white;
+  background: black;
 }
 
 .city-image {
   width: 48px;
   height: 48px;
+  background: black;
   background-size: cover;
   background-position: center;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.weather-card h4 {
-  /*background-color: white;*/
+.weather-card span {
   margin-left: 8px;
+  font-size: 18px;
 }
 
 
