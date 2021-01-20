@@ -33,51 +33,10 @@ a:visited {
   color:rgba(255, 255, 255, 0.4);
 }
 
-.sidebar {
+/*Layout*/
+
+.app {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 95vh;
-  margin: 16px 0 16px 16px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  /*background-color:orange;*/
-}
-
-.right-side {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  /*background-color: red;*/
-}
-
-.city-card {
-  display:flex;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 0 8px 8px 8px;
-  width: 45%;
-}
-
-.city-image {
-  width: 56px;
-  height: 56px;
-  /*background-size: cover;*/
-  background-position: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.city-info {
-  align-items: center;
-}
-
-.weather-card-content p {
-  margin: 0 0 0 8px;
-  font-size: 13px;
-}
-
-.content {
-  display: flex;
-  /*background-color: blue;*/
 }
 
 .main {
@@ -89,61 +48,37 @@ a:visited {
 
 }
 
+.content {
+  display: flex;
+  /*background-color: blue;*/
+}
+
+.right-side {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  /*background-color: red;*/
+}
+
 .right-sidebar {
   display: flex;
   flex-direction: column;
-/*  background-color: yellow;
-*/width: 30%;
+  /*background-color: yellow;*/
+  width: 30%;
   margin: 16px 16px 16px 8px;
 }
 
-.music-card h4 {
-  /*background-color: white;*/
-  margin-left: 8px;
-  margin-top: 0;
-}
+/*Left-Sidebar*/
 
-.song-card {
-  /*background-color: red;*/
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.sidebar {
   display: flex;
-  margin: 8px;
-  height: 56px;
-  align-items: ;
-}
-
-.song-image {
-  width: 56px;
-  height: 56px;
-}
-
-.song-info {
-  margin: 0 0 0 8px;
-}
-
-.song-info p {
-  font-size: 13px;
-  margin: 0 !important;
-}
-
-.card-2 {
-  margin: 0 8px 16px 8px;
-}
-
-.card-2 h4 {
-  /*background-color: white;*/
-
-}
-
-.card-2-content {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  height: 192px;
-}
-
-/*Components*/
-
-.app {
-  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 95vh;
+  margin: 16px 0 16px 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  /*background-color:orange;*/
 }
 
 .avatar {
@@ -163,6 +98,81 @@ a:visited {
 
 .big-icon {
   font-size: 24px;
+}
+
+/*Music card */
+
+.music-card h4 {
+  /*background-color: white;*/
+  margin-left: 8px;
+  margin-top: 0;
+}
+
+.song-card {
+  /*background-color: red;*/
+  display: flex;
+  margin: 8px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.song-image {
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-position: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.song-info {
+  width: 80%;
+  margin: 0 8px 0 8px;
+  /*background-color: red;*/
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-info p {
+  font-size: 12px;
+  margin-bottom: 0 !important;
+}
+
+.song-info span {
+  font-size: 8px;
+}
+
+/*City card*/
+
+.city-card {
+  display:flex;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 8px 8px 8px;
+  width: 45%;
+}
+
+.city-image {
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-position: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.city-info {
+  align-items: center;
+}
+
+.weather-card-content p {
+  margin: 0 0 0 8px;
+  font-size: 13px;
+}
+
+.weather-card h4 {
+  /*background-color: white;*/
+  margin-left: 8px;
+/*  margin-top: 0;*/
 }
 
 /*Navbar*/
