@@ -45,7 +45,6 @@ a:visited {
 */margin: 16px 8px 16px 16px;
   width: 70%;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-
 }
 
 .content {
@@ -66,6 +65,29 @@ a:visited {
   /*background-color: yellow;*/
   width: 30%;
   margin: 16px 16px 16px 8px;
+}
+
+/*Navbar*/
+
+.navbar-juagarca {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 16px;
+  height: 8vh;
+  /*width: 100%;*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.items > li {
+  color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
 }
 
 /*Left-Sidebar*/
@@ -99,6 +121,14 @@ a:visited {
 .big-icon {
   font-size: 24px;
 }
+
+.tools-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+  margin: 8px;
+}
+
 
 /*Music card */
 
@@ -145,11 +175,22 @@ a:visited {
 
 /*City card*/
 
+.weather-card-content p {
+  /*margin: 0 0 0 8px;*/
+  font-size: 13px;
+}
+
+.city-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  margin: 0 8px;
+}
+
 .city-card {
-  display:flex;
+  display: flex;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 0 8px 8px 8px;
-  width: 45%;
+  height: 50px;
 }
 
 .city-image {
@@ -160,42 +201,9 @@ a:visited {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.city-info {
-  align-items: center;
-}
-
-.weather-card-content p {
-  margin: 0 0 0 8px;
-  font-size: 13px;
-}
-
 .weather-card h4 {
   /*background-color: white;*/
   margin-left: 8px;
-/*  margin-top: 0;*/
-}
-
-/*Navbar*/
-
-.navbar-juagarca {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: 0 16px;
-  height: 8vh;
-  /*width: 100%;*/
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.items {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.items > li {
-  color: rgba(255, 255, 255, 0.2);
-  padding: 10px;
 }
 
 

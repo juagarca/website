@@ -1,5 +1,5 @@
 const apiKey = '9003b582cac1084f57538941e2c6ba19';
-const cities = ["Tel Aviv", "New York", "Mykonos", "London", "San Francisco", "Los Angeles", "Berlin", "Valencia"];
+const cities = ["London", "Valencia", "Tel Aviv", "Mykonos", "New York", "San Francisco", "Los Angeles", "Berlin"];
 
 const buildHTML = (city, weather, description, iconUrl, temp) => {
   city = `<div class="city-card">
@@ -8,11 +8,11 @@ const buildHTML = (city, weather, description, iconUrl, temp) => {
                      style="display: flex;
                             flex-direction: column;
                             justify-content: center;">
-                  <p>${city}</p>
-                  <p><em>${Math.round(temp)}°C<em></p>
+                  <p style='margin: 0 0 0 8px';>${city}</p>
+                  <p style='margin: 0 0 0 8px';>${Math.round(temp)}°C</p>
                 </div>
           </div>`;
-  document.querySelector(".weather-card-content").insertAdjacentHTML('beforeEnd', city);
+  document.querySelector(".city-cards-container").insertAdjacentHTML('beforeEnd', city);
 };
 
 const fetchInfo = (city) => {
