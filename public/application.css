@@ -73,7 +73,7 @@ a:visited {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 16px;
+  margin: 0 24px 0 8px;
   height: 8vh;
   /*width: 100%;*/
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -92,35 +92,34 @@ a:visited {
 
 /*Left-Sidebar*/
 
-.sidebar {
-  display: flex;
+.left-sidebar {
+  /*display: flex;*/
   justify-content: center;
   align-items: center;
   width: 20%;
   height: 95vh;
   padding: 16px 16px 16px 16px;
-  margin: 16px 0;
+  margin: 16px 8px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   /*background-color:orange;*/
 }
 
-.avatar {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.sidebar .content-side {
+.top-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /*justify-content: center;*/
   /*height: 60%;*/
+  margin-bottom: 16px;
+  align-items: flex-end;
 }
 
-.content-side h3 {
-  padding-bottom: 8px;
+.avatar {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.info h2, p {
+  margin: 0 0 0 8px;
 }
 
 .big-icon {
@@ -133,7 +132,7 @@ a:visited {
 }
 
 .tools-card h4 {
-  margin: 24px 0;
+  margin-top: 16px;
 }
 
 .tools {
