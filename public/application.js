@@ -31,13 +31,13 @@ const fetchWeather = (city) => {
 
 const buildSongHTML = (song) => {
   songHTML = `<div class="song-card">
-                <div class="song-image" style='background-image: url(${song.image});'></div>
-                <div class="song-info">
-                  <p>${song.title}</p>
-                  <p>by ${song.artist}</p>
-                  <p><em>${song.time}</em></p>
-                </div>
-              </div>`;
+                  <div class="song-image" style='background-image: url(${song.image});'></div>
+                  <div class="song-info">
+                    <p>${song.title}</p>
+                    <p>by ${song.artist}</p>
+                    <p><em>${song.time}</em></p>
+                  </div>
+                </div>`;
   document.querySelector('.songs-card').insertAdjacentHTML('afterbegin', songHTML);
 };
 
@@ -76,6 +76,10 @@ function fetchSongs() {
     });
 };
 
+function deleteLoading() {
+  document.querySelector('.loading').remove();
+}
+
 // Click event for logos to show name of tool
 logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
 for (let logo of logos) {
@@ -83,7 +87,7 @@ for (let logo of logos) {
       // document.querySelector('.text').remove();
       const x = event.screenX;
       const y = event.screenY;
-      const html = `<div class="text" style='background: black; color: white; position: absolute; left:${x+10}px; top: ${y-130}px; padding: 2px 4px; border-radius: 50%;'>
+      const html = `<div class="text" style='background: black; color: white; position: absolute; left:${x+10}px; top: ${y-130}px; padding: 2px 4px;'>
                       <small>${logo.alt}</small>
                     </div>`;
       document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
@@ -97,6 +101,7 @@ document.addEventListener('mouseup', (event) => {
 
 // Function calls
 fetchSongs();
+setTimeout(deleteLoading, 900);
 setInterval(fetchSong, 30000);
 cities.forEach((city) => {
   fetchWeather(city);
