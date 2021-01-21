@@ -83,8 +83,8 @@ for (let logo of logos) {
       // document.querySelector('.text').remove();
       const x = event.screenX;
       const y = event.screenY;
-      const html = `<div class="text" style='background: rgb(255, 255, 255, 0.6); color: black; position: absolute; left:${x+10}px; top: ${y-120}px; padding: 2px 4px; border-radius: 5px;'>
-                      <span>${logo.alt}</span>
+      const html = `<div class="text" style='background: black; color: white; position: absolute; left:${x+10}px; top: ${y-130}px; padding: 2px 4px; border-radius: 50%;'>
+                      <small>${logo.alt}</small>
                     </div>`;
       document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
     });
