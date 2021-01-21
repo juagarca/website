@@ -76,25 +76,24 @@ function fetchSongs() {
     });
 };
 
-// Click event for logos
+// Click event for logos to show name of tool
 logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
 for (let logo of logos) {
     logo.addEventListener('click', (event) => {
       // document.querySelector('.text').remove();
       const x = event.screenX;
       const y = event.screenY;
-      const html = `<div class="text" style='background: white; color: black; position: absolute; left:${x+10}px; top: ${y-120}px; padding: 2px 4px; border-radius: 5px;'>
+      const html = `<div class="text" style='background: rgb(255, 255, 255, 0.6); color: black; position: absolute; left:${x+10}px; top: ${y-120}px; padding: 2px 4px; border-radius: 5px;'>
                       <span>${logo.alt}</span>
                     </div>`;
-      // console.log(html);
       document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
     });
-    // logo.addEventListener('')
-    logo.addEventListener('mouseup', (event) => {
-        // event.currentTarget.remove();
-        document.querySelector('.text').remove();
-    });
 }
+
+//if user clicks outside the logos, we remove the name of the tool
+document.addEventListener('mouseup', (event) => {
+  document.querySelector('.text').remove();
+});
 
 // Function calls
 fetchSongs();
