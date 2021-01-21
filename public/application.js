@@ -76,9 +76,29 @@ function fetchSongs() {
     });
 };
 
+// Click event for logos
+logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
+for (let logo of logos) {
+    logo.addEventListener('click', (event) => {
+      // document.querySelector('.text').remove();
+      const x = event.screenX;
+      const y = event.screenY;
+      const html = `<div class="text" style='background: white; color: black; position: absolute; left:${x+10}px; top: ${y-120}px; padding: 2px 4px; border-radius: 5px;'>
+                      <span>${logo.alt}</span>
+                    </div>`;
+      // console.log(html);
+      document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
+    });
+    // logo.addEventListener('')
+    logo.addEventListener('mouseup', (event) => {
+        // event.currentTarget.remove();
+        document.querySelector('.text').remove();
+    });
+}
+
+// Function calls
 fetchSongs();
 setInterval(fetchSong, 30000);
-
 cities.forEach((city) => {
   fetchWeather(city);
 });
