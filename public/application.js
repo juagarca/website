@@ -122,7 +122,11 @@ cvButton.addEventListener('click', (event) => {
   event.preventDefault();
   const cvHTML =
     `<div>
-      <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a>
+      <br><br><br><br>
+      <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-around;">
+        <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+        <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+      </a>
     </div>`;
   document.querySelector('.main').innerHTML = "";
   document.querySelector('.main').insertAdjacentHTML('beforeEnd', cvHTML);
