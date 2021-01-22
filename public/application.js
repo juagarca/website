@@ -100,16 +100,32 @@ for (let logo of logos) {
 }
 
 //if there is a tool displayed, then it removes it
-if (document.querySelector('.text')) {
-  document.addEventListener('mouseup', (event) => {
+document.addEventListener('mouseup', (event) => {
+  if (document.querySelector('.text')) {
     document.querySelector('.text').remove();
-  });
-}
+  }
+});
+
+
+//click event for projects button
+const projectsBtn = document.querySelector('.fa-tools')
+projectsBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const projectsHTML = "Hola Pap";
+  document.querySelector('.main').innerHTML = "";
+  document.querySelector('.main').insertAdjacentHTML('beforeEnd', projectsHTML);
+});
 
 //click event for cv button
-const cvButton = document.querySelector('.fa-tools')
+const cvButton = document.querySelector('.fa-file-code')
 cvButton.addEventListener('click', (event) => {
-  console.log("aki");
+  event.preventDefault();
+  const cvHTML =
+    `<div>
+      <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a>
+    </div>`;
+  document.querySelector('.main').innerHTML = "";
+  document.querySelector('.main').insertAdjacentHTML('beforeEnd', cvHTML);
 });
 
 // Function calls
