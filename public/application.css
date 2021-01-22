@@ -40,11 +40,14 @@ a:visited {
 }
 
 .main {
-  height: 87vh;
-/*  background-color: green;
-*/margin: 16px 8px 16px 16px;
+  height: 90vh;
+  max-height: 90vh;
+  overflow: auto;
+  /*background-color: green;*/
+  padding: 16px 16px 16px 8px;
   width: 70%;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .content {
