@@ -173,6 +173,11 @@ a:visited {
 }
 
 /*Content*/
+
+.summary {
+  width: 500px;
+  margin: 0 auto;
+}
 .cv:hover {
   animation: shake 1s;
 }
