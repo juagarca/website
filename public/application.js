@@ -30,7 +30,12 @@ const fetchWeather = (city) => {
 };
 
 const buildSongHTML = (song) => {
-  songHTML = `<div class="song-card">
+  let className = "song-card"
+  if (song.time == 'Listening now...') {
+    className += ' song-card-active'
+  }
+
+  const songHTML = `<div class='${className}'>
                   <div class="song-image" style='background-image: url(${song.image});'></div>
                   <div class="song-info">
                     <p>${song.title}</p>
@@ -94,9 +99,17 @@ for (let logo of logos) {
     });
 }
 
-//if user clicks outside the logos, we remove the name of the tool
-document.addEventListener('mouseup', (event) => {
-  document.querySelector('.text').remove();
+//if there is a tool displayed, then it removes it
+if (document.querySelector('.text')) {
+  document.addEventListener('mouseup', (event) => {
+    document.querySelector('.text').remove();
+  });
+}
+
+//click event for cv button
+const cvButton = document.querySelector('.fa-tools')
+cvButton.addEventListener('click', (event) => {
+  console.log("aki");
 });
 
 // Function calls
