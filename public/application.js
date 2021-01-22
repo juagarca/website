@@ -24,7 +24,7 @@ const fetchWeather = (city) => {
       const description = data.weather[0].description;
       const temp = data.main.temp;
       const icon = data.weather[0].icon;
-      const iconUrl = `http://openweathermap.org/img/wn/${icon}.png`;
+      const iconUrl = `https://openweathermap.org/img/wn/${icon}.png`;
       buildWeatherHTML(city, weather, description, iconUrl, temp);
     });
 };
