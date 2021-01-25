@@ -106,30 +106,109 @@ document.addEventListener('mouseup', (event) => {
   }
 });
 
+// Html for summary section
+const summaryHTML =
+  `<br> <br><br> <br><br> <br><br>
+  <h1>Lorem ipsum dolor sit amet, adipisicing elit. Corporis blanditiis officia, delectus neque debitis similique.</h1>
+  <br>
+  <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis eveniet officiis possimus. Vitae debitis placeat molestias sapiente, hic eligendi, repellat aliquid cum aut officiis iusto quasi itaque labore accusantium.</p>
+  <br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis blanditiis officia, delectus neque debitis similique reprehenderit accusantium repellendus voluptatem voluptatibus, alias quis quidem quasi unde temporibus dolores sunt nemo.</h3>
+  <p>Lorem ipsum dolor sit amet, adipisicing elit. Corporis blanditiis officia, delectus neque debitis similique.</h1>
+  <br> <br><br> <br><br> <br><br> <br><br> <br><br><br> <br><br><br> <br><br>
+  <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis eveniet officiis possimus. Vitae debitis placeat molestias sapiente, hic eligendi, repellat aliquid cum aut officiis iusto quasi itaque labore accusantium.</p>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis blanditiis officia, delectus neque debitis similique reprehenderit accusantium repellendus voluptatem voluptatibus, alias quis quidem quasi unde temporibus dolores sunt nemo.</h3>
+  <h1>Lorem ipsum dolor sit amet, adipisicing elit.</h1>`;
+
+// Html for projects section
+const projectsHTML =
+  `<div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+    PintPal
+  </div>
+
+  <div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Hire My Hound
+  </div>
+
+  <div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Chat
+  </div>
+
+  <div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Garage
+  </div>`;
+
+const cvHTML =
+  `<br><br><br><br>
+  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-around;">
+    <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+    <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+  </a>`;
+
+//click event for home button
+const homeBtn = document.querySelector('.fa-home')
+homeBtn.addEventListener('click', (event) => {
+  const summary = document.querySelector('.summary');
+  summary.innerHTML = "";
+  summary.insertAdjacentHTML('beforeend', summaryHTML);
+  summary.classList.add('show');
+
+  const projects = document.querySelector('.cards-projects');
+  if (projects.classList.contains('show')) {
+    projects.classList.remove('show')
+  }
+  projects.innerHTML = "";
+
+  const cv = document.querySelector('.cv-container');
+  if (cv.classList.contains('show')) {
+    cv.classList.remove('show')
+  }
+  cv.innerHTML = "";
+});
+
 
 //click event for projects button
 const projectsBtn = document.querySelector('.fa-tools')
 projectsBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  const projectsHTML = "Hola Pap";
-  document.querySelector('.main').innerHTML = "";
-  document.querySelector('.main').insertAdjacentHTML('beforeEnd', projectsHTML);
+
+  const summary = document.querySelector('.summary');
+  if (summary.classList.contains('show')) {
+    summary.classList.remove('show')
+  }
+  summary.innerHTML = "";
+
+  const projects = document.querySelector('.cards-projects');
+  projects.innerHTML = "";
+  projects.insertAdjacentHTML('beforeend', projectsHTML);
+  projects.classList.add('show');
+
+  const cv = document.querySelector('.cv-container');
+  if (cv.classList.contains('show')) {
+    cv.classList.remove('show')
+  }
+  cv.innerHTML = "";
 });
 
 //click event for cv button
 const cvButton = document.querySelector('.fa-file-code')
 cvButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  const cvHTML =
-    `<div>
-      <br><br><br><br>
-      <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-around;">
-        <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
-        <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
-      </a>
-    </div>`;
-  document.querySelector('.main').innerHTML = "";
-  document.querySelector('.main').insertAdjacentHTML('beforeEnd', cvHTML);
+
+  const summary = document.querySelector('.summary');
+  if (summary.classList.contains('show')) {
+    summary.classList.remove('show')
+  }
+  summary.innerHTML = "";
+
+  const projects = document.querySelector('.cards-projects');
+  if (projects.classList.contains('show')) {
+    projects.classList.remove('show')
+  }
+  projects.innerHTML = "";
+
+  const cv = document.querySelector('.cv-container');
+  cv.innerHTML = "";
+  cv.insertAdjacentHTML('beforeend', cvHTML);
+  cv.classList.add('show');
 });
 
 // Function calls
@@ -139,3 +218,8 @@ setInterval(fetchSong, 30000);
 cities.forEach((city) => {
   fetchWeather(city);
 });
+
+//Populate summary by default
+const summary = document.querySelector('.summary');
+summary.insertAdjacentHTML('beforeend', summaryHTML);
+summary.classList.add('show');
