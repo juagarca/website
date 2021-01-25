@@ -8,7 +8,7 @@ list-style-type: none;
 body {
   color: white;
   background-color: #0D1117;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,7 +40,7 @@ h1 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 /*Layout*/
@@ -318,7 +318,7 @@ h4 {
 }
 
 .song-info p {
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 0 !important;
 }
 
