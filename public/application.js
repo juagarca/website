@@ -122,19 +122,19 @@ const summaryHTML =
 
 // Html for projects section
 const projectsHTML =
-  `<div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  `<div id="pintpal" class="card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
     PintPal
   </div>
 
-  <div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+  <div id="hiremyhound" class="card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
     Hire My Hound
   </div>
 
-  <div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+  <div id="chat" class="card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
     Chat
   </div>
 
-  <div class="card-project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+  <div id="garage" class="card-project" style=" cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
     Garage
   </div>`;
 
@@ -170,7 +170,6 @@ homeBtn.addEventListener('click', (event) => {
 //click event for projects button
 const projectsBtn = document.querySelector('.fa-tools')
 projectsBtn.addEventListener('click', (event) => {
-
   const summary = document.querySelector('.summary');
   if (summary.classList.contains('show')) {
     summary.classList.remove('show')
@@ -181,6 +180,29 @@ projectsBtn.addEventListener('click', (event) => {
   projects.innerHTML = "";
   projects.insertAdjacentHTML('beforeend', projectsHTML);
   projects.classList.add('show');
+
+  // Selecting project cards
+  const pintpalCard = document.getElementById('pintpal');
+  const hireMyHound = document.getElementById('hiremyhound');
+  const chat = document.getElementById('chat');
+  const garage = document.getElementById('garage');
+
+
+  pintpalCard.addEventListener('click', (event) => {
+    console.log("pintpal");
+  });
+
+  hireMyHound.addEventListener('click', (event) => {
+    console.log("hire");
+  });
+
+  chat.addEventListener('click', (event) => {
+    console.log("chat");
+  });
+
+  garage.addEventListener('click', (event) => {
+    console.log("garage");
+  });
 
   const cv = document.querySelector('.cv-container');
   if (cv.classList.contains('show')) {
@@ -210,6 +232,7 @@ cvButton.addEventListener('click', (event) => {
   cv.insertAdjacentHTML('beforeend', cvHTML);
   cv.classList.add('show');
 });
+
 
 // Function calls
 fetchSongs();
