@@ -40,3 +40,6 @@ get '/songs' do
 
   JSON songs
 end
+
+get '/testing' do
+end

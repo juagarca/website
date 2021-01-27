@@ -122,7 +122,7 @@ const summaryHTML =
 
 // Html for projects section
 const projectsHTML =
-  `<div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  `<div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pintpal-cover.png);">
     PintPal
   </div>`;
 
