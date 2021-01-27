@@ -122,20 +122,8 @@ const summaryHTML =
 
 // Html for projects section
 const projectsHTML =
-  `<div id="pintpal" class="card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  `<div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
     PintPal
-  </div>
-
-  <div id="hiremyhound" class="card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-    Hire My Hound
-  </div>
-
-  <div id="chat" class="card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-    Chat
-  </div>
-
-  <div id="garage" class="card-project" style=" cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-    Garage
   </div>`;
 
 const cvHTML =
@@ -144,6 +132,18 @@ const cvHTML =
     <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
     <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
   </a>`;
+
+const contentContainer = document.querySelector(".content-container");
+const PintPalHTML =
+  `<div>
+    <h2 style="text-align: center;">PintPal</h2>
+  </div>`;
+
+//Delete PintPalCard and add the Pintal Project
+function deletePintPalCard() {
+  document.getElementById('pintpal').remove();
+  contentContainer.insertAdjacentHTML('beforeEnd', PintPalHTML);
+}
 
 //click event for home button
 const homeBtn = document.querySelector('.fa-home')
@@ -181,34 +181,25 @@ projectsBtn.addEventListener('click', (event) => {
   projects.insertAdjacentHTML('beforeend', projectsHTML);
   projects.classList.add('show');
 
-  // Selecting project cards
-  const pintpalCard = document.getElementById('pintpal');
-  const hireMyHound = document.getElementById('hiremyhound');
-  const chat = document.getElementById('chat');
-  const garage = document.getElementById('garage');
-
-
-  pintpalCard.addEventListener('click', (event) => {
-    console.log("pintpal");
-  });
-
-  hireMyHound.addEventListener('click', (event) => {
-    console.log("hire");
-  });
-
-  chat.addEventListener('click', (event) => {
-    console.log("chat");
-  });
-
-  garage.addEventListener('click', (event) => {
-    console.log("garage");
-  });
 
   const cv = document.querySelector('.cv-container');
   if (cv.classList.contains('show')) {
     cv.classList.remove('show')
   }
   cv.innerHTML = "";
+
+  // Selecting project cards
+  const pintpalCard = document.getElementById('pintpal');
+
+  // Click event for pintpalCard
+  pintpalCard.addEventListener('click', (event) => {
+    if (pintpalCard.classList.contains('show-card')) {
+      pintpalCard.classList.remove('show-card');
+      setTimeout(deletePintPalCard, 900);
+
+    }
+
+  });
 });
 
 //click event for cv button

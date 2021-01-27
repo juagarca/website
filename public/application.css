@@ -211,16 +211,15 @@ h4 {
 
 .summary {
   opacity: 0;
-  transition: opacity 1.2s linear;
+  transition: opacity 1s linear;
 }
 
 .cards-projects {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 16px;
-  transition: transform 1s 0s;
   opacity: 0;
-  transition: opacity 1.2s linear;
+  transition: opacity 1s linear;
 }
 
 .card-project {
@@ -236,11 +235,23 @@ h4 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.pintpal-project {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.show-card {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .cv-container {
   opacity: 0;
-  transition: opacity 1.2s ease;
+  transition: opacity 1s ease;
 }
 
 .cv:hover {
