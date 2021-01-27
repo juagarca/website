@@ -122,13 +122,23 @@ const summaryHTML =
 
 // Html for projects section
 const projectsHTML =
-  `<div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/pintpal-cover.png);">
+  `<h2>Projects</h2><br>
+  <div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pintpal.png');">
     PintPal
+  </div>
+  <div id="hiremyhound" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hiremyhound.png');">
+    HireMyHound
+  </div>
+  <div id="chat" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/chat.png');">
+    Chat
+  </div>
+  <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/garage.png');">
+    Garage
   </div>`;
 
 const cvHTML =
-  `<br><br><br><br>
-  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-around;">
+  `<h2>CV</h2><br>
+  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between;">
     <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
     <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
   </a>`;
@@ -196,9 +206,7 @@ projectsBtn.addEventListener('click', (event) => {
     if (pintpalCard.classList.contains('show-card')) {
       pintpalCard.classList.remove('show-card');
       setTimeout(deletePintPalCard, 900);
-
     }
-
   });
 });
 

@@ -42,4 +42,5 @@ get '/songs' do
 end
 
 get '/testing' do
+  erb :testing
 end
