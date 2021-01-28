@@ -30,19 +30,28 @@ const fetchWeather = (city) => {
 };
 
 const buildSongHTML = (song) => {
-  let className = "song-card"
-  if (song.time == 'Listening now...') {
+  let className = "song-card";
+  let songHTML = '';
+  if (song.time == 'Listening now') {
     className += ' song-card-active'
+    songHTML = `<div class='${className}'>
+                    <div class="song-image" style='background-image: url(${song.image});'></div>
+                    <div class="song-info">
+                      <p>${song.title}</p>
+                      <p>by ${song.artist}</p>
+                      <p><img class="equalizer" src="images/equalizer.gif" alt="equalizer gif" width="30px">   <em>${song.time}</em></p>
+                    </div>
+                  </div>`;
+  } else {
+    songHTML = `<div class='${className}'>
+                    <div class="song-image" style='background-image: url(${song.image});'></div>
+                    <div class="song-info">
+                      <p>${song.title}</p>
+                      <p>by ${song.artist}</p>
+                      <p><em>${song.time}</em></p>
+                    </div>
+                  </div>`;
   }
-
-  const songHTML = `<div class='${className}'>
-                  <div class="song-image" style='background-image: url(${song.image});'></div>
-                  <div class="song-info">
-                    <p>${song.title}</p>
-                    <p>by ${song.artist}</p>
-                    <p><em>${song.time}</em></p>
-                  </div>
-                </div>`;
   document.querySelector('.songs-card').insertAdjacentHTML('afterbegin', songHTML);
 };
 
@@ -123,16 +132,16 @@ const summaryHTML =
 // Html for projects section
 const projectsHTML =
   `<h2>Projects</h2><br>
-  <div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pintpal.png');">
+  <div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/pintpal.png');">
     PintPal
   </div>
-  <div id="hiremyhound" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hiremyhound.png');">
+  <div id="hiremyhound" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hiremyhound.png');">
     HireMyHound
   </div>
-  <div id="chat" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/chat.png');">
+  <div id="chat" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/chat.png');">
     Chat
   </div>
-  <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/garage.png');">
+  <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/garage.png');">
     Garage
   </div>`;
 

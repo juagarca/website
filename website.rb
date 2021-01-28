@@ -26,7 +26,7 @@ get '/songs' do
     title = row.at('.chartlist-name').children[1].attributes['title'].value
     artist = row.at('.chartlist-artist').children[1].attributes['title'].value
     time = row.at('.chartlist-timestamp').children[1].children.text.strip
-    time = 'Listening now...' if time.include?('Scrobbling')
+    time = 'Listening now' if time.include?('Scrobbling')
 
     image = row.at('.chartlist-image').children[1].children[1].attributes['src'].value
     # Passing songs to the view
