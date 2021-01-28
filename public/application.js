@@ -117,21 +117,63 @@ document.addEventListener('mouseup', (event) => {
 
 // Html for summary section
 const summaryHTML =
-  `<br> <br><br> <br><br> <br><br>
-  <h1>Lorem ipsum dolor sit amet, adipisicing elit. Corporis blanditiis officia, delectus neque debitis similique.</h1>
+  `<br> <br><br> <br><br><br>
+  <h1>Hola 👋🏼 I'm <mark style="background-color: #60D2FF; color: white; padding-top: 0; padding-bottom: 0;">Juan</mark></h1>
+  <h1>Thank you for visiting</h1>
+  <h1>the House of Juagarca</h1>
   <br>
-  <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis eveniet officiis possimus. Vitae debitis placeat molestias sapiente, hic eligendi, repellat aliquid cum aut officiis iusto quasi itaque labore accusantium.</p>
-  <br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis blanditiis officia, delectus neque debitis similique reprehenderit accusantium repellendus voluptatem voluptatibus, alias quis quidem quasi unde temporibus dolores sunt nemo.</h3>
-  <p>Lorem ipsum dolor sit amet, adipisicing elit. Corporis blanditiis officia, delectus neque debitis similique.</h1>
-  <br> <br><br> <br><br> <br><br> <br><br> <br><br><br> <br><br><br> <br><br>
-  <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis eveniet officiis possimus. Vitae debitis placeat molestias sapiente, hic eligendi, repellat aliquid cum aut officiis iusto quasi itaque labore accusantium.</p>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corporis blanditiis officia, delectus neque debitis similique reprehenderit accusantium repellendus voluptatem voluptatibus, alias quis quidem quasi unde temporibus dolores sunt nemo.</h3>
-  <h1>Lorem ipsum dolor sit amet, adipisicing elit.</h1>`;
+  <p>A software house with a <mark style="background-color: #60D2FF; color: white;">different</mark> perspective 👀</p>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br>
+  <h2 style="text-align: right;">My Background</h2>
+  <div style="display: flex;">
+    <div style="width: 75%;"></div>
+    <div>
+      <p style="text-align: right;">I was born in Valencia, Spain where I completed a BSc in <mark style="background-color: #764BBC; color: white;">Software Engineering</mark></p><p style="text-align: right;">Upon completion of my degree, I decided to move to London where I have been living and working for over a decade 😱</p>
+      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home</p>
+    </div>
+  </div>
+  <br> <br> <br> <br> <br> <br> <br><br> <br>
+  <div style="width: 464px; margin: 0 auto;">
+    <h2 style="text-align: center;">The Story So Far</h2>
+      <p style="text-align: center;">Even though I worked as a <mark style="background-color: #EC6D4C; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
+      <p style="text-align: center; color: white; font-size: 16px;">So I decided to start working in retail as I needed some 💵</p>
+      <p style="text-align: center;">Since that point, I gained experience in different roles and industries. However, I didn't really feel fulfilled with my career. If you would like to know more about my previous roles, please visit my <a style="color: #EC6D4C;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or download my <a style="color: #EC6D4C;"target="_blank" href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a></p>
+      <ul>
+        <li style="text-align: center; color: white"><mark style="background-color: #EC6D4C; color: white;">Retail</mark>    |    <mark style="background-color: #EC6D4C; color: white;">Events</mark></li>
+        <li style="margin-top: 16px; text-align: center; color: white"><mark style="background-color: #EC6D4C; color: white;">Experiential Marketing</mark>    |    <mark style="background-color: #EC6D4C; color: white;">Tech Recruitment</mark></li>
+      </ul>
+  </div>
+  <br> <br> <br> <br> <br> <br> <br><br> <br>
+  <div style="display: flex;">
+    <div>
+      <h2>At Present</h2>
+      <p>As I am ❌ a quitter, I have restarted my tech career again 🙌🏼 This time I am determined to find a job and become a <mark style="background-color: #55CC62; color: white;">Full Stack Software Engineer</mark></p>
+      <p>In 2020 I graduated from <mark style="background-color: #55CC62; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life!</p>
+      <p style="color: white; font-size: 15px;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #55CC62; color: white;">projects</mark> which I will be addding to the Projects<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button"></i></a> section, also available on <a style="color: #55CC62;"target="_blank" href="https://www.github.com/juagarca">Github</a></p>
+    </div>
+    <div style="width: 62%;"></div>
+  </div>
+  <br> <br> <br> <br> <br> <br> <br><br> <br>
+  <h2 style="text-align: right;">Interests</h2>
+  <div style="display: flex;">
+    <div style="width: 75%;"></div>
+    <div>
+      <p style="text-align: right;">The idea behind this project was to create a dashboard/portfolio where I could showcase both my professional and personal interests</p>
+      <p style="text-align: right">I'm obsessed with <mark style="background-color: #FA2C44; color: white;">music</mark> artists 🎤 and pop culture, that's why I thought I should let you know what tunes I will be playing at work. You need the full playlist? 😛 go ahead and visit my <a style="color: #FA2C44;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
+      <p style="text-align: right; color: white; font-size: 16px;">Also I enjoy going on holidays and <mark style="background-color: #FA2C44; color: white;">travelling</mark> shocking right? I thought I'd share with you some of my favourite spots? 🏝</p>
+    </div>
+  </div>
+
+  `;
+
+//Populate summary by default
+const summary = document.querySelector('.summary');
+summary.insertAdjacentHTML('beforeend', summaryHTML);
+summary.classList.add('show');
 
 // Html for projects section
 const projectsHTML =
-  `<h2>Projects</h2><br>
+  `<h2>Projects</h2>
   <div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/pintpal.png');">
     PintPal
   </div>
@@ -146,25 +188,65 @@ const projectsHTML =
   </div>`;
 
 const cvHTML =
-  `<h2>CV</h2><br>
-  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between;">
+  `<h2>CV</h2>
+  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
     <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
     <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
   </a>`;
 
-const contentContainer = document.querySelector(".content-container");
-const PintPalHTML =
+const projects = document.querySelector(".cards-projects");
+
+const pintPalHTML =
   `<div>
     <h2 style="text-align: center;">PintPal</h2>
   </div>`;
 
-//Delete PintPalCard and add the Pintal Project
-function deleteProjectsAndAddPintPal() {
+const hireMyHoundHTML =
+  `<div>
+    <h2 style="text-align: center;">HireMyHound</h2>
+  </div>`;
+
+const chatHTML =
+  `<div>
+    <h2 style="text-align: center;">Chat</h2>
+  </div>`;
+
+const garageHTML =
+  `<div>
+    <h2 style="text-align: center;">Garage</h2>
+  </div>`;
+
+//Delete project cards and add the Pintal Project
+function deleteProjectsAndAddPintpal() {
   document.getElementById('pintpal').remove();
   document.getElementById('hiremyhound').remove();
   document.getElementById('chat').remove();
   document.getElementById('garage').remove();
-  contentContainer.insertAdjacentHTML('beforeEnd', PintPalHTML);
+  projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
+}
+
+function deleteProjectsAndAddHireMyHound() {
+  document.getElementById('pintpal').remove();
+  document.getElementById('hiremyhound').remove();
+  document.getElementById('chat').remove();
+  document.getElementById('garage').remove();
+  projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
+}
+
+function deleteProjectsAndAddChat() {
+  document.getElementById('pintpal').remove();
+  document.getElementById('hiremyhound').remove();
+  document.getElementById('chat').remove();
+  document.getElementById('garage').remove();
+  projects.insertAdjacentHTML('beforeEnd', chatHTML);
+}
+
+function deleteProjectsAndAddGarage() {
+  document.getElementById('pintpal').remove();
+  document.getElementById('hiremyhound').remove();
+  document.getElementById('chat').remove();
+  document.getElementById('garage').remove();
+  projects.insertAdjacentHTML('beforeEnd', garageHTML);
 }
 
 //click event for home button
@@ -175,7 +257,22 @@ homeBtn.addEventListener('click', (event) => {
   summary.insertAdjacentHTML('beforeend', summaryHTML);
   summary.classList.add('show');
 
-  const projects = document.querySelector('.cards-projects');
+  // Click event for project button in summary
+  const summaryProjectBtn = document.querySelectorAll('.fa-tools')[1];
+  summaryProjectBtn.addEventListener('click', (event) => {
+    if (summary.classList.contains('show')) {
+      summary.classList.remove('show')
+    }
+    summary.innerHTML = "";
+
+    if (projects.classList.contains('show')) {
+      projects.classList.remove('show');
+    }
+    projects.innerHTML = "";
+    projects.insertAdjacentHTML('beforeend', projectsHTML);
+    projects.classList.add('show');
+  });
+
   if (projects.classList.contains('show')) {
     projects.classList.remove('show')
   }
@@ -188,38 +285,71 @@ homeBtn.addEventListener('click', (event) => {
   cv.innerHTML = "";
 });
 
+projectBtns = document.querySelectorAll('.fa-tools');
+//click event for project buttons
+projectBtns.forEach((projectBtn) => {
+  projectBtn.addEventListener('click', (event) => {
+    const summary = document.querySelector('.summary');
+    if (summary.classList.contains('show')) {
+      summary.classList.remove('show')
+    }
+    summary.innerHTML = "";
 
-//click event for projects button
-const projectsBtn = document.querySelector('.fa-tools')
-projectsBtn.addEventListener('click', (event) => {
-  const summary = document.querySelector('.summary');
-  if (summary.classList.contains('show')) {
-    summary.classList.remove('show')
-  }
-  summary.innerHTML = "";
-
-  const projects = document.querySelector('.cards-projects');
-  projects.innerHTML = "";
-  projects.insertAdjacentHTML('beforeend', projectsHTML);
-  projects.classList.add('show');
+    if (projects.classList.contains('show')) {
+      projects.classList.remove('show');
+    }
+    projects.innerHTML = "";
+    projects.insertAdjacentHTML('beforeend', projectsHTML);
+    projects.classList.add('show');
 
 
-  const cv = document.querySelector('.cv-container');
-  if (cv.classList.contains('show')) {
-    cv.classList.remove('show')
-  }
-  cv.innerHTML = "";
+    const cv = document.querySelector('.cv-container');
+    if (cv.classList.contains('show')) {
+      cv.classList.remove('show')
+    }
+    cv.innerHTML = "";
 
-  // Selecting project cards
-  const pintpalCard = document.getElementById('pintpal');
+    // Selecting project cards
+    const pintpalCard = document.getElementById('pintpal');
+    const hiremyhoundCard = document.getElementById('hiremyhound');
+    const chatCard = document.getElementById('chat');
+    const garageCard = document.getElementById('garage');
 
-  // Click event for pintpalCard
-  pintpalCard.addEventListener('click', (event) => {
-    pintpalCard.classList.remove('show-card');
-    hiremyhound.classList.remove('show-card');
-    chat.classList.remove('show-card');
-    garage.classList.remove('show-card');
-    setTimeout(deleteProjectsAndAddPintPal, 900);
+    // Click event for pintpalCard
+    pintpalCard.addEventListener('click', (event) => {
+      pintpalCard.classList.remove('show-card');
+      hiremyhound.classList.remove('show-card');
+      chat.classList.remove('show-card');
+      garage.classList.remove('show-card');
+      setTimeout(deleteProjectsAndAddPintpal, 900);
+    });
+
+    // Click event for hiremyhoundCard
+    hiremyhoundCard.addEventListener('click', (event) => {
+      pintpalCard.classList.remove('show-card');
+      hiremyhound.classList.remove('show-card');
+      chat.classList.remove('show-card');
+      garage.classList.remove('show-card');
+      setTimeout(deleteProjectsAndAddHireMyHound, 900);
+    });
+
+    // Click event for chatCard
+    chatCard.addEventListener('click', (event) => {
+      pintpalCard.classList.remove('show-card');
+      hiremyhound.classList.remove('show-card');
+      chat.classList.remove('show-card');
+      garage.classList.remove('show-card');
+      setTimeout(deleteProjectsAndAddChat, 900);
+    });
+
+    // Click event for garageCard
+    garageCard.addEventListener('click', (event) => {
+      pintpalCard.classList.remove('show-card');
+      hiremyhound.classList.remove('show-card');
+      chat.classList.remove('show-card');
+      garage.classList.remove('show-card');
+      setTimeout(deleteProjectsAndAddGarage, 900);
+    });
   });
 });
 
@@ -233,7 +363,6 @@ cvButton.addEventListener('click', (event) => {
   }
   summary.innerHTML = "";
 
-  const projects = document.querySelector('.cards-projects');
   if (projects.classList.contains('show')) {
     projects.classList.remove('show')
   }
@@ -254,7 +383,4 @@ cities.forEach((city) => {
   fetchWeather(city);
 });
 
-//Populate summary by default
-const summary = document.querySelector('.summary');
-summary.insertAdjacentHTML('beforeend', summaryHTML);
-summary.classList.add('show');
+

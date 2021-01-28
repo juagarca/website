@@ -1,8 +1,8 @@
 * {
-margin: 0;
-padding: 0;
-border: none;
-list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style-type: none;
 }
 
 body {
@@ -34,8 +34,11 @@ a:visited {
   color: white;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Anton', sans-serif;
+}
+
+h1 {
   font-size: 56px;
 }
 
@@ -80,7 +83,7 @@ h4 {
 
 .button {
   border: 1px solid #3D4145;
-  color: rgba(255, 255, 255, 0.4);
+  color: #74767A;
   padding: 8px;
   margin: 0 0 0 8px;
   border-radius: 50%;
@@ -149,7 +152,7 @@ h4 {
 }
 
 .info p, h3 {
-  color: rgba(255, 255, 255, 0.4);
+  color: #74767A;
   display: flex;
   justify-content: center;
 }
@@ -215,6 +218,24 @@ h4 {
   transition: opacity 1s linear;
 }
 
+.summary p {
+  color: #74767A;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.summary h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.summary ul {
+  margin: 20px;
+  color: #74767A;
+  /*border: none;*/
+  /*list-style-type: bullets;*/
+}
+
 .cards-projects {
   display: grid;
   grid-template-columns: 1fr;
@@ -230,13 +251,11 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*color: white;*/
-  margin-bottom: 40px;
+  margin-top: 40px;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
-  /*box-shadow: 0 0 15px rgba(0,0,0,0.2);*/
   border: 1px solid #3D4145;
   opacity: 0;
   transition: opacity 1s ease;
@@ -245,26 +264,6 @@ h4 {
 .card-project:hover {
   animation: shake 1s;
 }
-
-/*.pintpal-project {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.hiremyhound-project {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.chat-project {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.garage-project {
-  opacity: 0;
-  transition: opacity 1s ease;
-}*/
 
 .show-card {
   opacity: 1;
@@ -312,7 +311,7 @@ h4 {
   display: flex;
   margin: 8px;
   height: 50px;
-  color: rgba(255, 255, 255, 0.4);
+  color: #74767A;
   border: 1px solid #3D4145;
   background: #161B22;
   border-radius: 5px;
@@ -379,7 +378,7 @@ h4 {
 
 .city-card {
   display: flex;
-  color: rgba(255, 255, 255, 0.4);
+  color: #74767A;
   border: 1px solid #3D4145;
   height: 50px;
   background: #161B22;
