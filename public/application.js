@@ -159,8 +159,11 @@ const PintPalHTML =
   </div>`;
 
 //Delete PintPalCard and add the Pintal Project
-function deletePintPalCard() {
+function deleteProjectsAndAddPintPal() {
   document.getElementById('pintpal').remove();
+  document.getElementById('hiremyhound').remove();
+  document.getElementById('chat').remove();
+  document.getElementById('garage').remove();
   contentContainer.insertAdjacentHTML('beforeEnd', PintPalHTML);
 }
 
@@ -212,10 +215,11 @@ projectsBtn.addEventListener('click', (event) => {
 
   // Click event for pintpalCard
   pintpalCard.addEventListener('click', (event) => {
-    if (pintpalCard.classList.contains('show-card')) {
-      pintpalCard.classList.remove('show-card');
-      setTimeout(deletePintPalCard, 900);
-    }
+    pintpalCard.classList.remove('show-card');
+    hiremyhound.classList.remove('show-card');
+    chat.classList.remove('show-card');
+    garage.classList.remove('show-card');
+    setTimeout(deleteProjectsAndAddPintPal, 900);
   });
 });
 

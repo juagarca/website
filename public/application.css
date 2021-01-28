@@ -246,10 +246,25 @@ h4 {
   animation: shake 1s;
 }
 
-.pintpal-project {
+/*.pintpal-project {
   opacity: 0;
   transition: opacity 1s ease;
 }
+
+.hiremyhound-project {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.chat-project {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.garage-project {
+  opacity: 0;
+  transition: opacity 1s ease;
+}*/
 
 .show-card {
   opacity: 1;
