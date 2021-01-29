@@ -57,9 +57,10 @@ h4 {
   max-height: 90vh;
   overflow: auto;
   /*background-color: green;*/
+  /*margin: 16px;*/
   padding: 8px 16px 16px 8px;
   width: 70%;
-  border-right: 1px solid #3D4145;
+  /*border-right: 1px solid #3D4145;*/
 }
 
 .content {
@@ -78,7 +79,10 @@ h4 {
   flex-direction: column;
   /*background-color: yellow;*/
   width: 30%;
-  margin: 8px 16px 16px 8px;
+  margin: 16px 8px 8px 0;
+  padding-left: 8px;
+  /*padding: 0;*/
+  border-left: 1px solid #3D4145;
 }
 
 .button {
@@ -103,7 +107,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 24px 0 8px;
+  margin: 0 16px 0 8px;
   height: 8vh;
   /*width: 100%;*/
   border-bottom: 1px solid #3D4145;
@@ -366,7 +370,7 @@ h4 {
 /*City card*/
 
 .weather-card h4 {
-  margin: 8px 0 8px 8px;
+  margin: 16px 0 8px 8px;
 }
 
 .city-cards-container {
@@ -380,7 +384,7 @@ h4 {
   display: flex;
   color: #74767A;
   border: 1px solid #3D4145;
-  height: 50px;
+  height: 44px;
   background: #161B22;
   border-radius: 5px;
 }
@@ -392,8 +396,8 @@ h4 {
 }
 
 .city-image {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border-radius: 5px;
   background: black;
   background-size: cover;
@@ -403,5 +407,5 @@ h4 {
 
 .weather-card-content p {
   /*margin: 0 0 0 8px;*/
-  font-size: 13px;
+  font-size: 11px;
 }

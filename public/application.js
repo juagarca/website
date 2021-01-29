@@ -136,7 +136,7 @@ const summaryHTML =
   <div style="width: 464px; margin: 0 auto;">
     <h2 style="text-align: center;">The Story So Far</h2>
       <p style="text-align: center;">Even though I worked as a <mark style="background-color: #EC6D4C; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
-      <p style="text-align: center; color: white; font-size: 16px;">So I decided to start working in retail as I needed some 💵</p>
+      <p style="text-align: center; color: white; font-size: 16px;">So I decided to start working in retail as I needed some 💰</p>
       <p style="text-align: center;">Since that point, I gained experience in different roles and industries. However, I didn't really feel fulfilled with my career. If you would like to know more about my previous roles, please visit my <a style="color: #EC6D4C;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or download my <a style="color: #EC6D4C;"target="_blank" href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a></p>
       <ul>
         <li style="text-align: center; color: white"><mark style="background-color: #EC6D4C; color: white;">Retail</mark>    |    <mark style="background-color: #EC6D4C; color: white;">Events</mark></li>
@@ -147,9 +147,9 @@ const summaryHTML =
   <div style="display: flex;">
     <div>
       <h2>At Present</h2>
-      <p>As I am ❌ a quitter, I have restarted my tech career again 🙌🏼 This time I am determined to find a job and become a <mark style="background-color: #55CC62; color: white;">Full Stack Software Engineer</mark></p>
+      <p>As I am ❌ a quitter, I have restarted my tech career again 🙌🏼 and this is how the <mark style="background-color: #55CC62; color: white;">House of Juagarca</mark> was born</p>
       <p>In 2020 I graduated from <mark style="background-color: #55CC62; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life!</p>
-      <p style="color: white; font-size: 15px;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #55CC62; color: white;">projects</mark> which I will be addding to the Projects<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button"></i></a> section, also available on <a style="color: #55CC62;"target="_blank" href="https://www.github.com/juagarca">Github</a></p>
+      <p style="color: white; font-size: 15px;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #55CC62; color: white;">projects</mark> which I will be addding to the<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button"></i></a>  section, also available on <a style="color: #55CC62;"target="_blank" href="https://www.github.com/juagarca">Github</a></p>
     </div>
     <div style="width: 62%;"></div>
   </div>
@@ -159,8 +159,8 @@ const summaryHTML =
     <div style="width: 75%;"></div>
     <div>
       <p style="text-align: right;">The idea behind this project was to create a dashboard/portfolio where I could showcase both my professional and personal interests</p>
-      <p style="text-align: right">I'm obsessed with <mark style="background-color: #FA2C44; color: white;">music</mark> artists 🎤 and pop culture, that's why I thought I should let you know what tunes I will be playing at work. You need the full playlist? 😛 go ahead and visit my <a style="color: #FA2C44;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
-      <p style="text-align: right; color: white; font-size: 16px;">Also I enjoy going on holidays and <mark style="background-color: #FA2C44; color: white;">travelling</mark> shocking right? I thought I'd share with you some of my favourite spots? 🏝</p>
+      <p style="text-align: right">I'm obsessed with <mark style="background-color: #FA2C44; color: white;">music</mark> & pop culture, here's a sneak peak to my music library. Need the full playlist? 😛 go ahead and visit my <a style="color: #FA2C44;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
+      <p style="text-align: right; color: white; font-size: 16px;">I ❤️ going on holidays and <mark style="background-color: #FA2C44; color: white;">travelling</mark> shocking right? I thought I'd share with you some of my favourite spots? 🏝</p>
     </div>
   </div>
 
