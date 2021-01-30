@@ -236,8 +236,6 @@ h4 {
 .summary ul {
   margin: 20px;
   color: #74767A;
-  /*border: none;*/
-  /*list-style-type: bullets;*/
 }
 
 .cards-projects {
@@ -248,25 +246,34 @@ h4 {
   transition: opacity 1s linear;
 }
 
+.project-container{
+  margin-top: 40px;
+  height: 240px;
+  width: 640px;
+  border: 1px solid #3D4145;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+
 .card-project {
   background-size: cover;
   background-position: center;
-  height: 240px;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
-  border: 1px solid #3D4145;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: all 1s ease;
 }
 
 .card-project:hover {
-  animation: shake 1s;
+  transform: scale(1.2);
 }
 
 .show-card {
