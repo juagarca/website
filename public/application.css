@@ -57,10 +57,8 @@ h4 {
   max-height: 90vh;
   overflow: auto;
   /*background-color: green;*/
-  /*margin: 16px;*/
   padding: 8px 16px 16px 8px;
   width: 70%;
-  /*border-right: 1px solid #3D4145;*/
 }
 
 .content {
@@ -162,7 +160,6 @@ h4 {
 }
 
 .flip-box-front {
-  /*background-color: #bbb;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -170,28 +167,30 @@ h4 {
 
 .flip-box-back {
   background-color: #161B22;
-  color: white;
   transform: rotateX(180deg);
   border: 1px solid white;
 }
-/*
+
+.flip-box-back h3 {
+  font-size: 18px;
+  color: #74767A;
+}
+
+.flip-box-back p {
+  font-size: 14px;
+  color: #74767A;
+}
+
 .language-images {
   display: flex;
   justify-content: space-between;
-  margin: 0 48px;
-  padding-bottom: 8px;
+  margin: 16px 48px 0 48px;
+  opacity: 0.5;
 }
 
 .language-images img {
   width: 40px;
-  opacity: 0.5;
 }
-
-.language-images img:hover {
-  opacity: 1;
-  border: 1px solid white;
-  transition: all 0.4s ease;
-}*/
 
 .tools-card {
   /*border-top: 1px solid #3D4145;*/
