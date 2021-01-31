@@ -163,14 +163,18 @@ h4 {
 
 .flip-box-front {
   /*background-color: #bbb;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .flip-box-back {
   background-color: #161B22;
   color: white;
   transform: rotateX(180deg);
+  border: 1px solid white;
 }
-
+/*
 .language-images {
   display: flex;
   justify-content: space-between;
@@ -185,17 +189,18 @@ h4 {
 
 .language-images img:hover {
   opacity: 1;
+  border: 1px solid white;
   transition: all 0.4s ease;
-}
+}*/
 
 .tools-card {
-  border-top: 1px solid #3D4145;
+  /*border-top: 1px solid #3D4145;*/
   width: 250px;
   margin-bottom: 8px;
 }
 
 .tools-card h4 {
-  margin: 16px 0;
+  margin: 18px 0 16px 0;
 }
 
 .tools {
