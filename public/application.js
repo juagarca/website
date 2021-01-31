@@ -206,8 +206,8 @@ const projects = document.querySelector(".cards-projects");
 
 const pintPalHTML =
   `<div>
-    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">PintPal</h3>
-    <div class="images-container">
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;"><a target="_blank" href="https://www.pintpal.me/">PintPal</a></h3>
+    <div class="pintpal-images-container">
       <img src="images/PintPal/pintpal01.png" class="pintpal-image">
       <img src="images/PintPal/pintpal02.png" class="pintpal-image">
       <img src="images/PintPal/pintpal03.png" class="pintpal-image">
@@ -217,21 +217,30 @@ const pintPalHTML =
 const hireMyHoundHTML =
   `<div>
     <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">HireMyHound</h3>
-    <div class="images-container">
-      <img src="images/PintPal/pintpal01.png" class="pintpal-image">
-      <img src="images/PintPal/pintpal02.png" class="pintpal-image">
-      <img src="images/PintPal/pintpal03.png" class="pintpal-image">
+    <div class="hiremyhound-images-container">
+      <img src="images/HireMyHound/hiremyhound01.png" class="hiremyhound-image">
+      <img src="images/HireMyHound/hiremyhound02.png" class="hiremyhound-image">
+      <img src="images/HireMyHound/hiremyhound03.png" class="hiremyhound-image">
+      <img src="images/HireMyHound/hiremyhound04.png" class="hiremyhound-image">
     </div>
   </div>`;
 
 const chatHTML =
   `<div>
-    <h2 style="text-align: center;">Chat</h2>
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Chat</h3>
+    <div class="chat-images-container">
+      <img src="images/Chat/chat01.png" class="chat-image">
+    </div>
   </div>`;
 
 const garageHTML =
-  `<div>
-    <h2 style="text-align: center;">Garage</h2>
+  `<div style="text-align: center;">
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Garage</h3>
+    <div class="garage-images-container">
+      <img src="images/Garage/garage01.png" class="garage-image">
+      <img src="images/Garage/garage02.png" class="garage-image">
+    </div>
+    <img src="images/Garage/garage03.png" class="garage-image" style="margin-top: 16px;">
   </div>`;
 
 //Delete project cards and add the Pintal Project
@@ -241,38 +250,33 @@ function deleteProjectsAndAddPintpal() {
   document.getElementById('chat-container').remove();
   document.getElementById('garage-container').remove();
 
-  // document.getElementById('pintpal').remove();
-
-  // document.getElementById('hiremyhound').remove();
-
-  // document.getElementById('chat').remove();
-
-  // document.getElementById('garage').remove();
-
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
 }
 
 function deleteProjectsAndAddHireMyHound() {
-  document.getElementById('pintpal').remove();
-  document.getElementById('hiremyhound').remove();
-  document.getElementById('chat').remove();
-  document.getElementById('garage').remove();
+  document.getElementById('pintpal-container').remove();
+  document.getElementById('hiremyhound-container').remove();
+  document.getElementById('chat-container').remove();
+  document.getElementById('garage-container').remove();
+
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
 }
 
 function deleteProjectsAndAddChat() {
-  document.getElementById('pintpal').remove();
-  document.getElementById('hiremyhound').remove();
-  document.getElementById('chat').remove();
-  document.getElementById('garage').remove();
+  document.getElementById('pintpal-container').remove();
+  document.getElementById('hiremyhound-container').remove();
+  document.getElementById('chat-container').remove();
+  document.getElementById('garage-container').remove();
+
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
 }
 
 function deleteProjectsAndAddGarage() {
-  document.getElementById('pintpal').remove();
-  document.getElementById('hiremyhound').remove();
-  document.getElementById('chat').remove();
-  document.getElementById('garage').remove();
+  document.getElementById('pintpal-container').remove();
+  document.getElementById('hiremyhound-container').remove();
+  document.getElementById('chat-container').remove();
+  document.getElementById('garage-container').remove();
+
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
 }
 

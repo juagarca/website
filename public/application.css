@@ -303,7 +303,7 @@ h4 {
   cursor: pointer;
 }
 
-.images-container {
+.pintpal-images-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -314,6 +314,48 @@ h4 {
   width: 200px;
   border: 1px solid #3D4145;
   margin: 0 auto;
+  border-radius: 5px;
+}
+
+.hiremyhound-images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin-top: 32px;
+}
+
+.hiremyhound-image {
+  width: 320px;
+  border: 1px solid #3D4145;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.chat-images-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  margin-top: 32px;
+}
+
+.chat-image {
+  width: 640px;
+  border: 1px solid #3D4145;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.garage-images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin-top: 32px;
+}
+
+.garage-image {
+  width: 320px;
+  border: 1px solid #3D4145;
+  border-radius: 5px;
 }
 
 /*CV*/
