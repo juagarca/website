@@ -174,22 +174,22 @@ summary.classList.add('show');
 // Html for projects section
 const projectsHTML =
   `<h2>Projects</h2>
-  <div class="project-container">
+  <div class="project-container" id="pintpal-container">
     <div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/pintpal.png');">
       PintPal
     </div>
   </div>
-  <div class="project-container">
+  <div class="project-container" id="hiremyhound-container">
     <div id="hiremyhound" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hiremyhound.png');">
       HireMyHound
     </div>
   </div>
-  <div class="project-container">
+  <div class="project-container" id="chat-container">
     <div id="chat" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/chat.png');">
       Chat
     </div>
   </div>
-  <div class="project-container">
+  <div class="project-container" id="garage-container">
     <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/garage.png');">
       Garage
     </div>
@@ -206,12 +206,22 @@ const projects = document.querySelector(".cards-projects");
 
 const pintPalHTML =
   `<div>
-    <h2 style="text-align: center;">PintPal</h2>
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">PintPal</h3>
+    <div class="images-container">
+      <img src="images/PintPal/pintpal01.png" class="pintpal-image">
+      <img src="images/PintPal/pintpal02.png" class="pintpal-image">
+      <img src="images/PintPal/pintpal03.png" class="pintpal-image">
+    </div>
   </div>`;
 
 const hireMyHoundHTML =
   `<div>
-    <h2 style="text-align: center;">HireMyHound</h2>
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">HireMyHound</h3>
+    <div class="images-container">
+      <img src="images/PintPal/pintpal01.png" class="pintpal-image">
+      <img src="images/PintPal/pintpal02.png" class="pintpal-image">
+      <img src="images/PintPal/pintpal03.png" class="pintpal-image">
+    </div>
   </div>`;
 
 const chatHTML =
@@ -226,10 +236,19 @@ const garageHTML =
 
 //Delete project cards and add the Pintal Project
 function deleteProjectsAndAddPintpal() {
-  document.getElementById('pintpal').remove();
-  document.getElementById('hiremyhound').remove();
-  document.getElementById('chat').remove();
-  document.getElementById('garage').remove();
+  document.getElementById('pintpal-container').remove();
+  document.getElementById('hiremyhound-container').remove();
+  document.getElementById('chat-container').remove();
+  document.getElementById('garage-container').remove();
+
+  // document.getElementById('pintpal').remove();
+
+  // document.getElementById('hiremyhound').remove();
+
+  // document.getElementById('chat').remove();
+
+  // document.getElementById('garage').remove();
+
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
 }
 
@@ -329,7 +348,14 @@ projectBtns.forEach((projectBtn) => {
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
       garage.classList.remove('show-card');
-      setTimeout(deleteProjectsAndAddPintpal, 900);
+
+      // Remove container border
+      document.getElementById('pintpal-container').style.border = 'none';
+      document.getElementById('hiremyhound-container').style.border = 'none';
+      document.getElementById('chat-container').style.border = 'none';
+      document.getElementById('garage-container').style.border = 'none';
+
+      setTimeout(deleteProjectsAndAddPintpal, 600);
     });
 
     // Click event for hiremyhoundCard
@@ -338,7 +364,14 @@ projectBtns.forEach((projectBtn) => {
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
       garage.classList.remove('show-card');
-      setTimeout(deleteProjectsAndAddHireMyHound, 900);
+
+      // Remove container border
+      document.getElementById('pintpal-container').style.border = 'none';
+      document.getElementById('hiremyhound-container').style.border = 'none';
+      document.getElementById('chat-container').style.border = 'none';
+      document.getElementById('garage-container').style.border = 'none';
+
+      setTimeout(deleteProjectsAndAddHireMyHound, 600);
     });
 
     // Click event for chatCard
@@ -347,7 +380,14 @@ projectBtns.forEach((projectBtn) => {
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
       garage.classList.remove('show-card');
-      setTimeout(deleteProjectsAndAddChat, 900);
+
+      // Remove container border
+      document.getElementById('pintpal-container').style.border = 'none';
+      document.getElementById('hiremyhound-container').style.border = 'none';
+      document.getElementById('chat-container').style.border = 'none';
+      document.getElementById('garage-container').style.border = 'none';
+
+      setTimeout(deleteProjectsAndAddChat, 600);
     });
 
     // Click event for garageCard
@@ -356,7 +396,7 @@ projectBtns.forEach((projectBtn) => {
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
       garage.classList.remove('show-card');
-      setTimeout(deleteProjectsAndAddGarage, 900);
+      setTimeout(deleteProjectsAndAddGarage, 600);
     });
   });
 });
