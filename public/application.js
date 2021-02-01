@@ -195,31 +195,50 @@ const projectsHTML =
     </div>
   </div>`;
 
-const cvHTML =
-  `<h2>CV</h2>
-  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
-    <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
-    <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
-  </a>`;
-
 const projects = document.querySelector(".cards-projects");
 
-const pintPalHTML =
-  `<div>
-    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">PintPal</h3>
-    <div class="pintpal-images-container">
-      <img src="images/PintPal/pintpal01.png" class="pintpal-image">
-      <img src="images/PintPal/pintpal02.png" class="pintpal-image">
-      <img src="images/PintPal/pintpal03.png" class="pintpal-image">
-    </div>
+  // <div style="text-align: right;">
+  //   <a target="_blank" href="https://www.pintpal.me/" class="project-button">Website</a>
+  // </div>
 
-    <div style="text-align: right;">
-      <a target="_blank" href="https://www.pintpal.me/" class="project-button">Website</a>
-    </div>
-  </div>`;
+//Delete project cards and add PintPal Project
+function deleteProjectCardsAndAddPintPal() {
+  document.getElementById('pintpal-project').classList.add("show-project");
+}
 
-const hireMyHoundHTML =
-  `<div>
+function deleteProjectsAndAddPintpal() {
+  document.getElementById('pintpal-container').remove();
+  document.getElementById('hiremyhound-container').remove();
+  document.getElementById('chat-container').remove();
+  document.getElementById('garage-container').remove();
+
+  const pintPalHTML =
+    `<div class="project" id='pintpal-project'>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">PintPal</h3>
+      <div class="pintpal-images-container">
+        <img src="images/PintPal/pintpal01.png" class="pintpal-image">
+        <img src="images/PintPal/pintpal02.png" class="pintpal-image">
+        <img src="images/PintPal/pintpal03.png" class="pintpal-image">
+      </div>
+    </div>`;
+
+  projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
+  setTimeout(deleteProjectCardsAndAddPintPal, 1);
+}
+
+//Delete project cards and add HireMyHound Project
+function deleteProjectCardsAndAddHireMyHound() {
+  document.getElementById('hiremyhound-project').classList.add("show-project");
+}
+
+function deleteProjectsAndAddHireMyHound() {
+  document.getElementById('pintpal-container').remove();
+  document.getElementById('hiremyhound-container').remove();
+  document.getElementById('chat-container').remove();
+  document.getElementById('garage-container').remove();
+
+  const hireMyHoundHTML =
+  `<div class="project" id='hiremyhound-project'>
     <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">HireMyHound</h3>
     <div class="hiremyhound-images-container">
       <img src="images/HireMyHound/hiremyhound01.png" class="hiremyhound-image">
@@ -229,41 +248,13 @@ const hireMyHoundHTML =
     </div>
   </div>`;
 
-const chatHTML =
-  `<div>
-    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Chat</h3>
-    <div class="chat-images-container">
-      <img src="images/Chat/chat01.png" class="chat-image">
-    </div>
-  </div>`;
-
-const garageHTML =
-  `<div style="text-align: center;">
-    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Garage</h3>
-    <div class="garage-images-container">
-      <img src="images/Garage/garage01.png" class="garage-image">
-      <img src="images/Garage/garage02.png" class="garage-image">
-    </div>
-    <img src="images/Garage/garage03.png" class="garage-image" style="margin-top: 16px;">
-  </div>`;
-
-//Delete project cards and add the Pintal Project
-function deleteProjectsAndAddPintpal() {
-  document.getElementById('pintpal-container').remove();
-  document.getElementById('hiremyhound-container').remove();
-  document.getElementById('chat-container').remove();
-  document.getElementById('garage-container').remove();
-
-  projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
+  projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
+  setTimeout(deleteProjectCardsAndAddHireMyHound, 1);
 }
 
-function deleteProjectsAndAddHireMyHound() {
-  document.getElementById('pintpal-container').remove();
-  document.getElementById('hiremyhound-container').remove();
-  document.getElementById('chat-container').remove();
-  document.getElementById('garage-container').remove();
-
-  projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
+//Delete project cards and add Chat Project
+function deleteProjectCardsAndAddChat() {
+  document.getElementById('chat-project').classList.add("show-project");
 }
 
 function deleteProjectsAndAddChat() {
@@ -272,7 +263,22 @@ function deleteProjectsAndAddChat() {
   document.getElementById('chat-container').remove();
   document.getElementById('garage-container').remove();
 
+
+  const chatHTML =
+    `<div class="project" id='chat-project'>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Chat</h3>
+      <div class="chat-images-container">
+        <img src="images/Chat/chat01.png" class="chat-image">
+      </div>
+    </div>`;
+
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
+  setTimeout(deleteProjectCardsAndAddChat, 1);
+}
+
+//Delete project cards and add Garage Project
+function deleteProjectCardsAndAddGarage() {
+  document.getElementById('garage-project').classList.add("show-project");
 }
 
 function deleteProjectsAndAddGarage() {
@@ -281,7 +287,18 @@ function deleteProjectsAndAddGarage() {
   document.getElementById('chat-container').remove();
   document.getElementById('garage-container').remove();
 
+  const garageHTML =
+    `<div style="text-align: center;" class="project" id="garage-project">
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Garage</h3>
+      <div class="garage-images-container">
+        <img src="images/Garage/garage01.png" class="garage-image">
+        <img src="images/Garage/garage02.png" class="garage-image">
+      </div>
+      <img src="images/Garage/garage03.png" class="garage-image" style="margin-top: 16px;">
+    </div>`;
+
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
+  setTimeout(deleteProjectCardsAndAddGarage, 1);
 }
 
 //click event for home button
@@ -363,7 +380,7 @@ projectBtns.forEach((projectBtn) => {
       document.getElementById('chat-container').style.border = 'none';
       document.getElementById('garage-container').style.border = 'none';
 
-      setTimeout(deleteProjectsAndAddPintpal, 600);
+      setTimeout(deleteProjectsAndAddPintpal, 500);
     });
 
     // Click event for hiremyhoundCard
@@ -379,7 +396,7 @@ projectBtns.forEach((projectBtn) => {
       document.getElementById('chat-container').style.border = 'none';
       document.getElementById('garage-container').style.border = 'none';
 
-      setTimeout(deleteProjectsAndAddHireMyHound, 600);
+      setTimeout(deleteProjectsAndAddHireMyHound, 500);
     });
 
     // Click event for chatCard
@@ -395,7 +412,7 @@ projectBtns.forEach((projectBtn) => {
       document.getElementById('chat-container').style.border = 'none';
       document.getElementById('garage-container').style.border = 'none';
 
-      setTimeout(deleteProjectsAndAddChat, 600);
+      setTimeout(deleteProjectsAndAddChat, 500);
     });
 
     // Click event for garageCard
@@ -404,10 +421,25 @@ projectBtns.forEach((projectBtn) => {
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
       garage.classList.remove('show-card');
-      setTimeout(deleteProjectsAndAddGarage, 600);
+
+      // Remove container border
+      document.getElementById('pintpal-container').style.border = 'none';
+      document.getElementById('hiremyhound-container').style.border = 'none';
+      document.getElementById('chat-container').style.border = 'none';
+      document.getElementById('garage-container').style.border = 'none';
+
+      setTimeout(deleteProjectsAndAddGarage, 500);
     });
   });
 });
+
+const cvHTML =
+  `<h2>CV</h2>
+  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
+    <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+    <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+  </a>`;
+
 
 //click event for cv button
 const cvButton = document.querySelector('.fa-file-code')
