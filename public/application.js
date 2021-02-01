@@ -171,8 +171,6 @@ const summaryHTML =
     </div>
   </div>`;
 
-
-
 //Populate summary by default
 const summary = document.querySelector('.summary');
 summary.insertAdjacentHTML('beforeend', summaryHTML);
@@ -376,10 +374,18 @@ homeBtn.addEventListener('click', (event) => {
     cv.classList.remove('show')
   }
   cv.innerHTML = "";
+
+  // Scroll to top of the summary
+  document.getElementById('top').scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+  });
 });
 
+//Click event for project buttons
 projectBtns = document.querySelectorAll('.fa-tools');
-//click event for project buttons
+
 projectBtns.forEach((projectBtn) => {
   projectBtn.addEventListener('click', (event) => {
     const summary = document.querySelector('.summary');
@@ -401,6 +407,13 @@ projectBtns.forEach((projectBtn) => {
       cv.classList.remove('show')
     }
     cv.innerHTML = "";
+
+    // Scroll to top of the projects
+    document.getElementById('top').scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
 
     // Selecting project cards
     const pintpalCard = document.getElementById('pintpal');
