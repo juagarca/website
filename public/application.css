@@ -16,6 +16,10 @@ body {
   display: none;
 }
 
+.right-side::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: white;
 }
@@ -434,10 +438,13 @@ h4 {
   color: #74767A;
   border: 1px solid #3D4145;
   background: #161B22;
+  border-radius: 5px;
+}
+
+.song-card p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  border-radius: 5px;
 }
 
 .song-card-active {
