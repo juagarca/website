@@ -101,7 +101,7 @@ h4 {
 .project-button {
   border: 1px solid #3D4145;
   color: #74767A;
-  padding: 8px;
+  padding: 6px 8px;
   margin: 0 0 0 8px;
   border-radius: 5px;
   background: #161B22;
@@ -111,8 +111,8 @@ h4 {
   transition: all 0.5s linear;
   border: 1px solid white;
   color: white;
-  font-size: 18px;
   background: black;
+  cursor: pointer;
 }
 
 /*Navbar*/

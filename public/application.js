@@ -122,54 +122,95 @@ const summaryHTML =
   <h1>Thank you for visiting</h1>
   <h1>the House of Juagarca</h1>
   <br>
-  <p>A software house with a <mark style="background-color: #60D2FF; color: white;">different</mark> perspective 👀</p>
-  <br> <br> <br> <br> <br> <br> <br><br> <br><br>
+  <p>A software house with a <mark style="background-color: #60D2FF; color: white;">different</mark> perspective 👀   <span id="start" class="project-button">Start</span></p>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br>
+  <div id="background"></div>
+  <br><br><br><br><br><br>
   <h2 style="text-align: right;">My Background</h2>
   <div style="display: flex;">
     <div style="width: 75%;"></div>
     <div>
       <p style="text-align: right;">I was born in Valencia, Spain where I completed a BSc in <mark style="background-color: #764BBC; color: white;">Software Engineering</mark></p><p style="text-align: right;">Upon completion of my degree, I decided to move to London where I have been living and working for over a decade 😱</p>
-      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home</p>
+      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home  <span style="text-align: right;" id="next-story" class="project-button">Next</span></p>
     </div>
   </div>
-  <br> <br> <br> <br> <br> <br> <br><br> <br>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+  <div id="story"></div>
+  <br><br>
   <div style="width: 464px; margin: 0 auto;">
     <h2 style="text-align: center;">The Story So Far</h2>
       <p style="text-align: center;">Even though I worked as a <mark style="background-color: #EC6D4C; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
-      <p style="text-align: center; color: white; font-size: 16px;">So I decided to start working in retail as I needed some 💰</p>
+      <p style="text-align: center; color: white; font-size: 16px;">I decided to start working in retail as I needed some 💰</p>
       <p style="text-align: center;">Since that point, I gained experience in different roles and industries. However, I didn't really feel fulfilled with my career. If you would like to know more about my previous roles, please visit my <a style="color: #EC6D4C;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or download my <a style="color: #EC6D4C;"target="_blank" href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a></p>
       <ul>
         <li style="text-align: center; color: white"><mark style="background-color: #EC6D4C; color: white;">Retail</mark>    |    <mark style="background-color: #EC6D4C; color: white;">Events</mark></li>
         <li style="margin-top: 16px; text-align: center; color: white"><mark style="background-color: #EC6D4C; color: white;">Experiential Marketing</mark>    |    <mark style="background-color: #EC6D4C; color: white;">Tech Recruitment</mark></li>
       </ul>
+      <div style="text-align: center;"><span id="next-present" class="project-button" style="margin: 0;">Next</span></div>
   </div>
-  <br> <br> <br> <br> <br> <br> <br><br> <br>
-  <div style="display: flex;">
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br>
+  <div id="present"></div>
+  <br><br><br><br>
+  <div style="display: flex;" >
     <div>
       <h2>At Present</h2>
       <p>As I am ❌ a quitter, I have restarted my tech career again 🙌🏼 and this is how the <mark style="background-color: #55CC62; color: white;">House of Juagarca</mark> was born</p>
       <p>In 2020 I graduated from <mark style="background-color: #55CC62; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life!</p>
-      <p style="color: white; font-size: 15px;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #55CC62; color: white;">projects</mark> which I will be addding to the<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button"></i></a>  section, also available on <a style="color: #55CC62;"target="_blank" href="https://www.github.com/juagarca">Github</a></p>
+      <p style="color: white; font-size: 15px;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #55CC62; color: white;">projects</mark> which I will be addding to the<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button" style="margin-right: 8px;"></i></a>section, also available on <a style="color: #55CC62;"target="_blank" href="https://www.github.com/juagarca">Github</a>       <span style="text-align: center;" id="next-interest" class="project-button">Next</span></p>
     </div>
     <div style="width: 62%;"></div>
   </div>
-  <br> <br> <br> <br> <br> <br> <br><br> <br>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br><br><br>
   <h2 style="text-align: right;">Interests</h2>
-  <div style="display: flex;">
+  <div style="display: flex;" id="interests">
     <div style="width: 75%;"></div>
     <div>
-      <p style="text-align: right;">The idea behind this project was to create a dashboard/portfolio where I could showcase both my professional and personal interests</p>
-      <p style="text-align: right">I'm obsessed with <mark style="background-color: #FA2C44; color: white;">music</mark> & pop culture, here's a sneak peak to my music library. Need the full playlist? 😛 go ahead and visit my <a style="color: #FA2C44;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
-      <p style="text-align: right; color: white; font-size: 16px;">I ❤️ going on holidays and <mark style="background-color: #FA2C44; color: white;">travelling</mark> shocking right? I thought I'd share with you some of my favourite spots? 🏝</p>
+      <p style="text-align: right;">The idea behind this project was to create an app where I could showcase both my portfolio and personal interests</p>
+      <p style="text-align: right">I'm obsessed with <mark style="background-color: #FA2C44; color: white;">music</mark> & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <a style="color: #FA2C44;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
+      <p style="text-align: right; color: white; font-size: 16px;">I try to go on <mark style="background-color: #FA2C44; color: white;">holidays</mark> as much as I can, shocking right? I thought I'd share with you some of my favourite spots? 🏝</p>
     </div>
-  </div>
+  </div>`;
 
-  `;
+
 
 //Populate summary by default
 const summary = document.querySelector('.summary');
 summary.insertAdjacentHTML('beforeend', summaryHTML);
 summary.classList.add('show');
+
+// Summary buttons transitions
+document.getElementById('start').addEventListener('click', () => {
+    document.getElementById('background').scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+});
+
+document.getElementById('next-story').addEventListener('click', () => {
+    document.getElementById('story').scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+});
+
+document.getElementById('next-present').addEventListener('click', () => {
+    document.getElementById('present').scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+});
+
+document.getElementById('next-interest').addEventListener('click', () => {
+    document.getElementById('interests').scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+});
+
 
 // Html for projects section
 const projectsHTML =
@@ -461,7 +502,6 @@ cvButton.addEventListener('click', (event) => {
   cv.insertAdjacentHTML('beforeend', cvHTML);
   cv.classList.add('show');
 });
-
 
 // Function calls
 fetchSongs();
