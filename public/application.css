@@ -399,6 +399,11 @@ h4 {
   transition: opacity 0.5s linear;
 }
 
+
+.cv-container::-webkit-scrollbar {
+  display: none;
+}
+
 .cv:hover {
   animation: shake 0.8s;
 }
