@@ -12,8 +12,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.content::-webkit-scrollbar {
-    display: none;
+.main::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -434,6 +434,9 @@ h4 {
   color: #74767A;
   border: 1px solid #3D4145;
   background: #161B22;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   border-radius: 5px;
 }
 
@@ -446,7 +449,7 @@ h4 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  display: block;
+  /*display: block;*/
   /*background: black;*/
 }
 
