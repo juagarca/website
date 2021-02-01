@@ -443,6 +443,10 @@ h4 {
 
 .song-card-active p {
   color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
   /*background: black;*/
 }
 
