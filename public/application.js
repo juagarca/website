@@ -125,7 +125,7 @@ const summaryHTML =
   <p>A software house with a <mark style="background-color: #0D1117; color: white; ">different</mark> perspective 👀   <span id="start" class="project-button">Start</span></p>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br>
   <div id="background"></div>
-  <br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
   <h2 style="text-align: right;">My Background</h2>
   <div style="display: flex;">
     <div style="width: 75%;"></div>
@@ -150,7 +150,7 @@ const summaryHTML =
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br>
   <div id="present"></div>
-  <br><br><br><br>
+  <br><br><br><br><br></br>
   <div style="display: flex;" >
     <div>
       <h2>At Present</h2>
