@@ -259,6 +259,12 @@ function deleteProjectsAndAddPintpal() {
         <img src="images/PintPal/pintpal02.png" class="pintpal-image">
         <img src="images/PintPal/pintpal03.png" class="pintpal-image">
       </div>
+      <br>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Description</h3>
+      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
+      <br>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Tools</h3>
+      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
@@ -285,6 +291,12 @@ function deleteProjectsAndAddHireMyHound() {
       <img src="images/HireMyHound/hiremyhound03.png" class="hiremyhound-image">
       <img src="images/HireMyHound/hiremyhound04.png" class="hiremyhound-image">
     </div>
+    <br>
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Description</h3>
+    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
+    <br>
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Tools</h3>
+    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
   </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
@@ -309,6 +321,12 @@ function deleteProjectsAndAddChat() {
       <div class="chat-images-container">
         <img src="images/Chat/chat01.png" class="chat-image">
       </div>
+      <br>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Description</h3>
+      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
+      <br>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Tools</h3>
+      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
@@ -334,6 +352,12 @@ function deleteProjectsAndAddGarage() {
         <img src="images/Garage/garage02.png" class="garage-image">
       </div>
       <img src="images/Garage/garage03.png" class="garage-image" style="margin-top: 16px;">
+      <br>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Description</h3>
+      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
+      <br>
+      <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Tools</h3>
+      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
