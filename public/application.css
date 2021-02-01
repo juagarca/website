@@ -98,6 +98,23 @@ h4 {
   background: black;
 }
 
+.project-button {
+  border: 1px solid #3D4145;
+  color: #74767A;
+  padding: 8px;
+  margin: 0 0 0 8px;
+  border-radius: 5px;
+  background: #161B22;
+}
+
+.project-button:hover {
+  transition: all 0.5s ease;
+  border: 1px solid white;
+  color: white;
+  font-size: 18px;
+  background: black;
+}
+
 /*Navbar*/
 
 .navbar-juagarca {

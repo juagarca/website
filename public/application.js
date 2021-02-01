@@ -95,25 +95,25 @@ function deleteLoading() {
 }
 
 // Click event for logos to show name of tool
-logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
-for (let logo of logos) {
-    logo.addEventListener('click', (event) => {
-      // document.querySelector('.text').remove();
-      const x = event.screenX;
-      const y = event.screenY;
-      const html = `<div class="text" style='background: black; color: white; position: absolute; left:${x+10}px; top: ${y-130}px; padding: 2px 4px;'>
-                      <small>${logo.alt}</small>
-                    </div>`;
-      document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
-    });
-}
+// logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
+// for (let logo of logos) {
+//     logo.addEventListener('click', (event) => {
+//       // document.querySelector('.text').remove();
+//       const x = event.screenX;
+//       const y = event.screenY;
+//       const html = `<div class="text" style='background: black; color: white; position: absolute; left:${x+10}px; top: ${y-130}px; padding: 2px 4px;'>
+//                       <small>${logo.alt}</small>
+//                     </div>`;
+//       document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
+//     });
+// }
 
-//if there is a tool displayed, then it removes it
-document.addEventListener('mouseup', (event) => {
-  if (document.querySelector('.text')) {
-    document.querySelector('.text').remove();
-  }
-});
+// //if there is a tool displayed, then it removes it
+// document.addEventListener('mouseup', (event) => {
+//   if (document.querySelector('.text')) {
+//     document.querySelector('.text').remove();
+//   }
+// });
 
 // Html for summary section
 const summaryHTML =
@@ -206,11 +206,15 @@ const projects = document.querySelector(".cards-projects");
 
 const pintPalHTML =
   `<div>
-    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;"><a target="_blank" href="https://www.pintpal.me/">PintPal</a></h3>
+    <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">PintPal</h3>
     <div class="pintpal-images-container">
       <img src="images/PintPal/pintpal01.png" class="pintpal-image">
       <img src="images/PintPal/pintpal02.png" class="pintpal-image">
       <img src="images/PintPal/pintpal03.png" class="pintpal-image">
+    </div>
+
+    <div style="text-align: right;">
+      <a target="_blank" href="https://www.pintpal.me/" class="project-button">Website</a>
     </div>
   </div>`;
 
