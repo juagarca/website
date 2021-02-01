@@ -12,7 +12,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-body::-webkit-scrollbar {
+.content::-webkit-scrollbar {
     display: none;
 }
 
