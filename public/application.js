@@ -163,7 +163,7 @@ const summaryHTML =
     <div id="story-marquee" class="marquee"><marquee behavior="slide" direction="left" scrollamount="25"><h2>The Story So Far</h2></marquee></div>
     <p>Even though I worked as a <mark style="background-color: #0D1117; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
     <p style="color: white; font-size: 16px;">I ended up securing a job in well known retailer and decided to take it as I needed to start earning 💰</p>
-    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <a style="color: #white;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or <a style="color: #white;"target="_blank" href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a></p>
+    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <a style="color: #white;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or <a style="color: #white;"target="_blank" href="https://drive.google.com/file/d/1M-MM_EyMbpCoZAAi_C--HIuTviJ18ahZ/view?usp=sharing">CV</a></p>
     <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment  <span id="next-present" class="project-button" onClick="resetPresentMarquee();">Next</span></p>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br>
