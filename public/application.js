@@ -163,7 +163,7 @@ const summaryHTML =
     <div id="story-marquee" class="marquee"><h2>The Story So Far</h2></div>
     <p>Even though I worked as a <mark style="background-color: #0D1117; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
     <p style="color: white; font-size: 16px;">I ended up securing a job in well known retailer and decided to take it as I needed to start earning 💰</p>
-    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <a style="color: #white;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or <a style="color: #white;"target="_blank" href="https://drive.google.com/file/d/1M-MM_EyMbpCoZAAi_C--HIuTviJ18ahZ/view?usp=sharing">CV</a></p>
+    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <a style="color: #white;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or <a style="color: #white;"target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></p>
     <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment  <span id="next-present" class="project-button" onClick="resetPresentMarquee();">Next</span></p>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br>
@@ -172,7 +172,7 @@ const summaryHTML =
   <div style="display: flex;" >
     <div>
       <div id="present-marquee" class="marquee"><h2 style="text-align:right;">At Present</h2></div>
-      <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the <mark style="background-color: #0D1117; color: white;">House of Juagarca</mark> was born</p>
+      <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the <mark style="background-color: #0D1117; color: white;">House of Juagarca</mark> was born!</p>
       <p style="text-align: right;">In 2020 I graduated from <mark style="background-color: #0D1117; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
       <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #0D1117; color: white;">projects</mark> which I will be addding to the<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button" style="margin-right: 8px;"></i></a>section, also available on <a style="color: #74767A;"target="_blank" href="https://www.github.com/juagarca">Github</a>       <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
     </div>
@@ -361,6 +361,12 @@ function deleteProjectsAndAddChat() {
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
   setTimeout(deleteProjectCardsAndAddChat, 0);
+  // Scroll to top
+  document.getElementById('top').scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+  });
 }
 
 //Delete project cards and add Garage Project
@@ -392,6 +398,12 @@ function deleteProjectsAndAddGarage() {
 
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
   setTimeout(deleteProjectCardsAndAddGarage, 0);
+  // Scroll to top
+  document.getElementById('top').scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+  });
 }
 
 //click event for home button
@@ -524,12 +536,6 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for chatCard
     chatCard.addEventListener('click', (event) => {
-      // Scroll to top of container
-      document.getElementById('top').scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
 
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
@@ -547,12 +553,6 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for garageCard
     garageCard.addEventListener('click', (event) => {
-      // Scroll to top of container
-      document.getElementById('top').scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
 
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
@@ -572,7 +572,7 @@ projectBtns.forEach((projectBtn) => {
 
 const cvHTML =
   `<h2>CV</h2>
-  <a href="https://drive.google.com/file/d/1M-MM_EyMbpCoZAAi_C--HIuTviJ18ahZ/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
+  <a href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
     <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
     <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
   </a>`;
