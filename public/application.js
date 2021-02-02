@@ -538,7 +538,7 @@ projectBtns.forEach((projectBtn) => {
 
 const cvHTML =
   `<h2>CV</h2>
-  <a href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
+  <a href="https://drive.google.com/file/d/1M-MM_EyMbpCoZAAi_C--HIuTviJ18ahZ/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
     <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
     <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
   </a>`;
