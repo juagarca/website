@@ -37,9 +37,9 @@ const buildSongHTML = (song) => {
     songHTML = `<div class='${className}'>
                     <div class="song-image" style='background-image: url(${song.image});'></div>
                     <div class="song-info">
-                      <p>${song.title}</p>
+                      <p style="margin-top: 2px;">${song.title}</p>
                       <p>by ${song.artist}</p>
-                      <p><img class="equalizer" src="images/equalizer.gif" alt="equalizer gif" width="30px">   <em>${song.time}</em></p>
+                      <p><img class="equalizer" src="images/giphy.gif" alt="equalizer gif">   <em>${song.time}</em></p>
                     </div>
                   </div>`;
   } else {
