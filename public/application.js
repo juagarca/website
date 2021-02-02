@@ -194,6 +194,12 @@ const summary = document.querySelector('.summary');
 summary.insertAdjacentHTML('beforeend', summaryHTML);
 summary.classList.add('show');
 buttonsTransition();
+// Scroll to top of container
+document.getElementById('top').scrollIntoView({
+  behavior: "smooth",
+  block: "start",
+  inline: "nearest"
+});
 
 // Summary buttons transitions
 function buttonsTransition() {
@@ -292,7 +298,7 @@ function deleteProjectsAndAddPintpal() {
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
-  setTimeout(deleteProjectCardsAndAddPintPal, 1);
+  setTimeout(deleteProjectCardsAndAddPintPal, 0);
 }
 
 //Delete project cards and add HireMyHound Project
@@ -324,7 +330,7 @@ function deleteProjectsAndAddHireMyHound() {
   </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
-  setTimeout(deleteProjectCardsAndAddHireMyHound, 1);
+  setTimeout(deleteProjectCardsAndAddHireMyHound, 0);
 }
 
 //Delete project cards and add Chat Project
@@ -354,7 +360,7 @@ function deleteProjectsAndAddChat() {
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
-  setTimeout(deleteProjectCardsAndAddChat, 1);
+  setTimeout(deleteProjectCardsAndAddChat, 0);
 }
 
 //Delete project cards and add Garage Project
@@ -385,7 +391,7 @@ function deleteProjectsAndAddGarage() {
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
-  setTimeout(deleteProjectCardsAndAddGarage, 1);
+  setTimeout(deleteProjectCardsAndAddGarage, 0);
 }
 
 //click event for home button
@@ -472,6 +478,13 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for pintpalCard
     pintpalCard.addEventListener('click', (event) => {
+      // Scroll to top of container
+      document.getElementById('top').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -488,6 +501,13 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for hiremyhoundCard
     hiremyhoundCard.addEventListener('click', (event) => {
+      // Scroll to top of container
+      document.getElementById('top').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -504,6 +524,13 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for chatCard
     chatCard.addEventListener('click', (event) => {
+      // Scroll to top of container
+      document.getElementById('top').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -520,6 +547,13 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for garageCard
     garageCard.addEventListener('click', (event) => {
+      // Scroll to top of container
+      document.getElementById('top').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -547,6 +581,13 @@ const cvHTML =
 //click event for cv button
 const cvButton = document.querySelector('.fa-file-code')
 cvButton.addEventListener('click', (event) => {
+
+  // Scroll to top of container
+  document.getElementById('top').scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest"
+  });
 
   const summary = document.querySelector('.summary');
   if (summary.classList.contains('show')) {
