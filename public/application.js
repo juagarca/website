@@ -115,24 +115,26 @@ function deleteLoading() {
 //   }
 // });
 
+// Summary marquees
 function resetBackgroundMarquee() {
   marquee = document.getElementById('background-marquee');
-  marquee.innerHTML = '<marquee behavior="slide" direction="right" scrollamount="50"><h2>My background</h2></marquee>';
+  marquee.innerHTML = '<marquee behavior="slide" direction="right" scrollamount="30"><h2>My background</h2></marquee>';
 }
+
 
 function resetStoryMarquee() {
   marquee = document.getElementById('story-marquee');
-  marquee.innerHTML = '<marquee behavior="slide" direction="left" scrollamount="50"><h2>The Story So Far</h2></marquee>';
+  marquee.innerHTML = '<marquee behavior="slide" direction="left" scrollamount="40"><h2>The Story So Far</h2></marquee>';
 }
 
 function resetPresentMarquee() {
   marquee = document.getElementById('present-marquee');
-  marquee.innerHTML = '<marquee behavior="slide" direction="right" scrollamount="50"><h2>At Present</h2></marquee>';
+  marquee.innerHTML = '<marquee behavior="slide" direction="right" scrollamount="40"><h2>At Present</h2></marquee>';
 }
 
 function resetInterestsMarquee() {
   marquee = document.getElementById('interests-marquee');
-  marquee.innerHTML = '<marquee behavior="slide" direction="left" scrollamount="50"><h2>Interests</h2></marquee>';
+  marquee.innerHTML = '<marquee behavior="slide" direction="left" scrollamount="40"><h2>Interests</h2></marquee>';
 }
 
 // Html for summary section
@@ -149,16 +151,16 @@ const summaryHTML =
   <div style="display: flex;">
     <div style="width: 75%;"></div>
     <div>
-      <div id="background-marquee"><marquee behavior="slide" direction="right" scrollamount="25"><h2>My background</h2></marquee></div>
+      <div id="background-marquee" class="marquee"><marquee behavior="slide" direction="right" scrollamount="25"><h2>My background</h2></marquee></div>
       <p style="text-align: right;">I was born in Valencia 🇪🇸 where I completed a BSc in <mark style="background-color: #0D1117; color: white;">Software Engineering</mark></p><p style="text-align: right;">Upon completion of my degree, I decided to move to London where I have been living and working for over a decade 😱</p>
-      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home  <span style="text-align: right;" id="next-story" class="project-button" onClick="resetStoryMarquee()";>Next</span></p>
+      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home  <span style="text-align: right;" id="next-story" class="project-button";>Next</span></p>
     </div>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br>
   <div id="story"></div>
   <br><br><br><br>
   <div style="width: 496px; margin: 0 auto;">
-    <div id="story-marquee"><marquee behavior="slide" direction="left" scrollamount="25"><h2>The Story So Far</h2></marquee></div>
+    <div id="story-marquee" class="marquee"><marquee behavior="slide" direction="left" scrollamount="25"><h2>The Story So Far</h2></marquee></div>
     <p>Even though I worked as a <mark style="background-color: #0D1117; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
     <p style="color: white; font-size: 16px;">I ended up securing a job in well known retailer and decided to take it as I needed to start earning 💰</p>
     <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <a style="color: #white;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or <a style="color: #white;"target="_blank" href="https://drive.google.com/file/d/1znDklEe-f-cpiwssKoaZx2JMGJG6ZHEh/view?usp=sharing">CV</a></p>
@@ -169,7 +171,7 @@ const summaryHTML =
   <br><br><br><br><br>
   <div style="display: flex;" >
     <div>
-      <div id="present-marquee"><marquee behavior="slide" direction="right" scrollamount="25"><h2>At Present</h2></marquee></div>
+      <div id="present-marquee" class="marquee"><marquee behavior="slide" direction="right" scrollamount="25"><h2>At Present</h2></marquee></div>
       <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the <mark style="background-color: #0D1117; color: white;">House of Juagarca</mark> was born</p>
       <p style="text-align: right;">In 2020 I graduated from <mark style="background-color: #0D1117; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
       <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #0D1117; color: white;">projects</mark> which I will be addding to the<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button" style="margin-right: 8px;"></i></a>section, also available on <a style="color: #74767A;"target="_blank" href="https://www.github.com/juagarca">Github</a>       <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
@@ -179,7 +181,7 @@ const summaryHTML =
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br><br><br>
   <div style="display: flex;" id="interests">
     <div>
-      <div id="interests-marquee"><marquee behavior="slide" direction="left" scrollamount="25"><h2>Interests</h2></marquee></div>
+      <div id="interests-marquee" class="marquee"><marquee behavior="slide" direction="left" scrollamount="25"><h2>Interests</h2></marquee></div>
       <p>The idea behind this project was to create an app where I could showcase both my portfolio and personal interests 🤷🏻‍♂️</p>
       <p>I'm obsessed with <mark style="background-color: #0D1117; color: white;">music</mark> & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <a style="color: white;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
       <p style="color: white; font-size: 16px;">I try to go on <mark style="background-color: #0D1117; color: white;">holidays</mark> as much as I can, shocking right? I thought I'd share with you some of my favourite spots?</p>
@@ -191,40 +193,46 @@ const summaryHTML =
 const summary = document.querySelector('.summary');
 summary.insertAdjacentHTML('beforeend', summaryHTML);
 summary.classList.add('show');
+buttonsTransition();
 
 // Summary buttons transitions
-document.getElementById('start').addEventListener('click', () => {
-    document.getElementById('background').scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-    });
-});
+function buttonsTransition() {
+  document.getElementById('start').addEventListener('click', () => {
+      document.getElementById('background').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+      resetBackgroundMarquee();
+  });
 
-document.getElementById('next-story').addEventListener('click', () => {
-    document.getElementById('story').scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-    });
-});
+  document.getElementById('next-story').addEventListener('click', () => {
+      document.getElementById('story').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+      resetStoryMarquee();
+  });
 
-document.getElementById('next-present').addEventListener('click', () => {
-    document.getElementById('present').scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-    });
-});
+  document.getElementById('next-present').addEventListener('click', () => {
+      document.getElementById('present').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+      resetPresentMarquee();
+  });
 
-document.getElementById('next-interest').addEventListener('click', () => {
-    document.getElementById('interests').scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-    });
-});
-
+  document.getElementById('next-interest').addEventListener('click', () => {
+      document.getElementById('interests').scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+      resetInterestsMarquee();
+  });
+}
 
 // Html for projects section
 const projectsHTML =
@@ -387,6 +395,7 @@ homeBtn.addEventListener('click', (event) => {
   summary.innerHTML = "";
   summary.insertAdjacentHTML('beforeend', summaryHTML);
   summary.classList.add('show');
+  buttonsTransition();
 
   // Click event for project button in summary
   const summaryProjectBtn = document.querySelectorAll('.fa-tools')[1];

@@ -282,6 +282,18 @@ p {
   color: #74767A;
 }
 
+.marquee {
+  transition: all 1.5s ease-in;
+}
+
+.marquee-hide {
+  opacity: 0;
+}
+
+.marquee-show {
+  opacity: 1;
+}
+
 /*Projects*/
 
 .cards-projects {
