@@ -94,6 +94,15 @@ function deleteLoading() {
   document.querySelector('.loading').remove();
 }
 
+function scrollToTop() {
+  // document.getElementById('top').scrollIntoView({
+  //   behavior: "smooth",
+  //   block: "start",
+  //   inline: "nearest"
+  // });
+  document.querySelector('.main').scrollTop = 0;
+};
+
 // Click event for logos to show name of tool
 // logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
 // for (let logo of logos) {
@@ -120,7 +129,6 @@ function resetBackgroundMarquee() {
   marquee = document.getElementById('background-marquee');
   marquee.innerHTML = '<marquee behavior="slide" direction="right" scrollamount="30"><h2>My background</h2></marquee>';
 }
-
 
 function resetStoryMarquee() {
   marquee = document.getElementById('story-marquee');
@@ -194,12 +202,7 @@ const summary = document.querySelector('.summary');
 summary.insertAdjacentHTML('beforeend', summaryHTML);
 summary.classList.add('show');
 buttonsTransition();
-// Scroll to top of container
-document.getElementById('top').scrollIntoView({
-  behavior: "smooth",
-  block: "start",
-  inline: "nearest"
-});
+scrollToTop();
 
 // Summary buttons transitions
 function buttonsTransition() {
@@ -266,13 +269,10 @@ const projectsHTML =
 
 const projects = document.querySelector(".cards-projects");
 
-  // <div style="text-align: right;">
-  //   <a target="_blank" href="https://www.pintpal.me/" class="project-button">Website</a>
-  // </div>
-
 //Delete project cards and add PintPal Project
 function deleteProjectCardsAndAddPintPal() {
   document.getElementById('pintpal-project').classList.add("show-project");
+  scrollToTop();
 }
 
 function deleteProjectsAndAddPintpal() {
@@ -299,6 +299,7 @@ function deleteProjectsAndAddPintpal() {
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
   setTimeout(deleteProjectCardsAndAddPintPal, 0);
+  scrollToTop();
 }
 
 //Delete project cards and add HireMyHound Project
@@ -336,6 +337,7 @@ function deleteProjectsAndAddHireMyHound() {
 //Delete project cards and add Chat Project
 function deleteProjectCardsAndAddChat() {
   document.getElementById('chat-project').classList.add("show-project");
+  scrollToTop();
 }
 
 function deleteProjectsAndAddChat() {
@@ -361,12 +363,7 @@ function deleteProjectsAndAddChat() {
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
   setTimeout(deleteProjectCardsAndAddChat, 0);
-  // Scroll to top
-  document.getElementById('top').scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest"
-  });
+  scrollToTop();
 }
 
 //Delete project cards and add Garage Project
@@ -398,17 +395,13 @@ function deleteProjectsAndAddGarage() {
 
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
   setTimeout(deleteProjectCardsAndAddGarage, 0);
-  // Scroll to top
-  document.getElementById('top').scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest"
-  });
+  scrollToTop();
 }
 
 //click event for home button
 const homeBtn = document.querySelector('.fa-home')
 homeBtn.addEventListener('click', (event) => {
+  scrollToTop();
   const summary = document.querySelector('.summary');
   summary.innerHTML = "";
   summary.insertAdjacentHTML('beforeend', summaryHTML);
@@ -418,6 +411,7 @@ homeBtn.addEventListener('click', (event) => {
   // Click event for project button in summary
   const summaryProjectBtn = document.querySelectorAll('.fa-tools')[1];
   summaryProjectBtn.addEventListener('click', (event) => {
+    scrollToTop();
     if (summary.classList.contains('show')) {
       summary.classList.remove('show')
     }
@@ -441,13 +435,6 @@ homeBtn.addEventListener('click', (event) => {
     cv.classList.remove('show')
   }
   cv.innerHTML = "";
-
-  // Scroll to top of the summary
-  document.getElementById('top').scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest"
-  });
 });
 
 //Click event for project buttons
@@ -455,6 +442,9 @@ projectBtns = document.querySelectorAll('.fa-tools');
 
 projectBtns.forEach((projectBtn) => {
   projectBtn.addEventListener('click', (event) => {
+    // Scroll to top
+    scrollToTop();
+
     const summary = document.querySelector('.summary');
     if (summary.classList.contains('show')) {
       summary.classList.remove('show')
@@ -475,13 +465,6 @@ projectBtns.forEach((projectBtn) => {
     }
     cv.innerHTML = "";
 
-    // Scroll to top of the projects
-    document.getElementById('top').scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-    });
-
     // Selecting project cards
     const pintpalCard = document.getElementById('pintpal');
     const hiremyhoundCard = document.getElementById('hiremyhound');
@@ -490,13 +473,6 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for pintpalCard
     pintpalCard.addEventListener('click', (event) => {
-      // Scroll to top of container
-      document.getElementById('top').scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
-
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -513,13 +489,6 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for hiremyhoundCard
     hiremyhoundCard.addEventListener('click', (event) => {
-      // Scroll to top of container
-      document.getElementById('top').scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
-
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -536,7 +505,6 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for chatCard
     chatCard.addEventListener('click', (event) => {
-
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -553,7 +521,6 @@ projectBtns.forEach((projectBtn) => {
 
     // Click event for garageCard
     garageCard.addEventListener('click', (event) => {
-
       pintpalCard.classList.remove('show-card');
       hiremyhound.classList.remove('show-card');
       chat.classList.remove('show-card');
@@ -581,13 +548,7 @@ const cvHTML =
 //click event for cv button
 const cvButton = document.querySelector('.fa-file-code')
 cvButton.addEventListener('click', (event) => {
-
-  // Scroll to top of container
-  document.getElementById('top').scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-    inline: "nearest"
-  });
+  scrollToTop();
 
   const summary = document.querySelector('.summary');
   if (summary.classList.contains('show')) {
