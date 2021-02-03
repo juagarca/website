@@ -95,11 +95,6 @@ function deleteLoading() {
 }
 
 function scrollToTop() {
-  // document.getElementById('top').scrollIntoView({
-  //   behavior: "smooth",
-  //   block: "start",
-  //   inline: "nearest"
-  // });
   document.querySelector('.main').scrollTop = 0;
 };
 
@@ -182,7 +177,7 @@ const summaryHTML =
       <div id="present-marquee" class="marquee"><h2 style="text-align:right;">At Present</h2></div>
       <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the <mark style="background-color: #0D1117; color: white;">House of Juagarca</mark> was born!</p>
       <p style="text-align: right;">In 2020 I graduated from <mark style="background-color: #0D1117; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
-      <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #0D1117; color: white;">projects</mark> which I will be addding to the<a title="Projects" style="cursor: pointer;"><i class="fas fa-tools button" style="margin-right: 8px;"></i></a>section, also available on <a style="color: #74767A;"target="_blank" href="https://www.github.com/juagarca">Github</a>       <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
+      <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #0D1117; color: white;">projects</mark> which I will be addding to the<a><i class="fas fa-tools button-summary" style="margin-right: 8px;"></i></a>section, also available on <a style="color: #74767A;"target="_blank" href="https://www.github.com/juagarca">Github</a>       <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
     </div>
     <div style="width: 62%;"></div>
   </div>
@@ -199,10 +194,10 @@ const summaryHTML =
 
 //Populate summary by default
 const summary = document.querySelector('.summary');
-summary.insertAdjacentHTML('beforeend', summaryHTML);
-summary.classList.add('show');
-buttonsTransition();
-scrollToTop();
+setTimeout(function(){ summary.insertAdjacentHTML('beforeend', summaryHTML); }, 900);
+setTimeout(function(){ summary.classList.add('show'); }, 900);
+setTimeout(buttonsTransition, 900);
+setTimeout(scrollToTop, 900);
 
 // Summary buttons transitions
 function buttonsTransition() {
@@ -404,26 +399,27 @@ homeBtn.addEventListener('click', (event) => {
   scrollToTop();
   const summary = document.querySelector('.summary');
   summary.innerHTML = "";
-  summary.insertAdjacentHTML('beforeend', summaryHTML);
-  summary.classList.add('show');
-  buttonsTransition();
+  setTimeout(function(){ summary.insertAdjacentHTML('beforeend', summaryHTML); }, 400);
+  setTimeout(function(){ summary.classList.add('show'); }, 400);
+  setTimeout(buttonsTransition, 400);
 
   // Click event for project button in summary
-  const summaryProjectBtn = document.querySelectorAll('.fa-tools')[1];
-  summaryProjectBtn.addEventListener('click', (event) => {
-    scrollToTop();
-    if (summary.classList.contains('show')) {
-      summary.classList.remove('show')
-    }
-    summary.innerHTML = "";
+  // summaryProjectBtn = document.querySelectorAll('.fa-tools')[1];
+  // summaryProjectBtn.addEventListener('click', (event) => {
 
-    if (projects.classList.contains('show')) {
-      projects.classList.remove('show');
-    }
-    projects.innerHTML = "";
-    projects.insertAdjacentHTML('beforeend', projectsHTML);
-    projects.classList.add('show');
-  });
+  //   scrollToTop();
+  //   if (summary.classList.contains('show')) {
+  //     summary.classList.remove('show')
+  //   }
+  //   summary.innerHTML = "";
+
+  //   if (projects.classList.contains('show')) {
+  //     projects.classList.remove('show');
+  //   }
+  //   projects.innerHTML = "";
+  //   setTimeout(function(){ projects.insertAdjacentHTML('beforeend', projectsHTML); }, 200);
+  //   setTimeout(function(){ projects.classList.add('show'); }, 200);
+  // });
 
   if (projects.classList.contains('show')) {
     projects.classList.remove('show')
@@ -439,7 +435,6 @@ homeBtn.addEventListener('click', (event) => {
 
 //Click event for project buttons
 projectBtns = document.querySelectorAll('.fa-tools');
-
 projectBtns.forEach((projectBtn) => {
   projectBtn.addEventListener('click', (event) => {
     // Scroll to top
@@ -455,9 +450,8 @@ projectBtns.forEach((projectBtn) => {
       projects.classList.remove('show');
     }
     projects.innerHTML = "";
-    projects.insertAdjacentHTML('beforeend', projectsHTML);
-    projects.classList.add('show');
-
+    setTimeout(function(){ projects.insertAdjacentHTML('beforeend', projectsHTML); }, 300);
+    setTimeout(function(){ projects.classList.add('show'); }, 300);
 
     const cv = document.querySelector('.cv-container');
     if (cv.classList.contains('show')) {
@@ -540,8 +534,8 @@ projectBtns.forEach((projectBtn) => {
 const cvHTML =
   `<h2>CV</h2>
   <a href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing" target="_blank" style="display: flex; justify-content: space-between; margin-top: 40px;">
-    <img class="cv" src="images/CV-1.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
-    <img class="cv" src="images/CV-2.png" alt="CV" width="300" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+    <img class="cv" src="images/CV-1.png" alt="CV" width="280" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
+    <img class="cv" src="images/CV-2.png" alt="CV" width="280" style="border: 1px solid rgba(255, 255, 255, 0.2);" title="Click to download!">
   </a>`;
 
 
@@ -563,8 +557,8 @@ cvButton.addEventListener('click', (event) => {
 
   const cv = document.querySelector('.cv-container');
   cv.innerHTML = "";
-  cv.insertAdjacentHTML('beforeend', cvHTML);
-  cv.classList.add('show');
+  setTimeout(function(){ cv.insertAdjacentHTML('beforeend', cvHTML); }, 400);
+  setTimeout(function(){ cv.classList.add('show'); }, 400);
 });
 
 // Function calls

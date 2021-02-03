@@ -110,6 +110,15 @@ p {
   background: black;
 }
 
+.button-summary {
+  border: 1px solid #3D4145;
+  color: #74767A;
+  padding: 8px;
+  margin: 0 0 0 8px;
+  border-radius: 50%;
+  background: #161B22;
+}
+
 .project-button {
   border: 1px solid #3D4145;
   color: #74767A;
