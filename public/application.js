@@ -295,8 +295,7 @@ function deleteProjectsAndAddPintpal() {
         <img src="images/PintPal/pintpal02.png" class="pintpal-image">
         <img src="images/PintPal/pintpal03.png" class="pintpal-image">
       </div>
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
       <p style="text-align: right;">PintPal was created during my time at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
       <p style="text-align: right;">The app includes an interactive map of London venues offering outdoor space & heating 🔥 You are also able to book a venue to meet your friends and have a live conversation 💬 with the venue staff in case you are delayed for your reservation and would like to keep your table.</p>
       <p style="text-align: right;">After your visit, your receive a notification to remind you to review your visit 🚀</p>
@@ -320,8 +319,8 @@ function deleteProjectsAndAddPintpal() {
         <img src="images/trello.svg" alt="Trello" title="Trello">
       </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
-      <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
-      <p style="text-align: right;"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
+      <p style="text-align: right;"><mark><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
+      <p style="text-align: right;"><mark><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
@@ -349,8 +348,7 @@ function deleteProjectsAndAddHireMyHound() {
       <img src="images/HireMyHound/hiremyhound03.png" class="hiremyhound-image">
       <img src="images/HireMyHound/hiremyhound04.png" class="hiremyhound-image">
     </div>
-    <br>
-    <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
+    <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
     <p style="text-align: right;">HireMyHound is an Airbnb clone created at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
     <p style="text-align: right;">The app includes a search function and an interactive map of dogs available for hire. Dogs and dog owners have profile pages where they display all their details and rates 💰</p>
     <p style="text-align: right;">As a visitor you can read the blog and explore the 🐶 in your area, but if you wish to book one of the gorgeous pups you will need to create an account.</p>
@@ -373,8 +371,8 @@ function deleteProjectsAndAddHireMyHound() {
       <img src="images/trello.svg" alt="Trello" title="Trello">
     </div>
     <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
-    <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://hiremyhound.herokuapp.com" target="_blank">Website</a></mark></p>
-    <p style="text-align: right;"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://github.com/juagarca/hire-my-hound" target="_blank">Repo on github</a></mark></p>
+    <p style="text-align: right; color:"><mark><a href="https://hiremyhound.herokuapp.com" target="_blank">Website</a></mark></p>
+    <p style="text-align: right;"><mark><a href="https://github.com/juagarca/hire-my-hound" target="_blank">Repo on github</a></mark></p>
   </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
@@ -400,8 +398,7 @@ function deleteProjectsAndAddChat() {
       <div class="chat-images-container">
         <img src="images/Chat/chat01.png" class="chat-image">
       </div>
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
       <p style="text-align: right;">This is a live chat 💬 application which I created with React & Redux and is protected 🔒by a Devise sign in.</p>
       <p style="text-align: right;">I also had to provide an API for the front-end, as Redux action creators needed to retrieve information from Rails.</p>
       <p style="text-align: right;">This is my first React & Rails application 🙌🏼 and it was so exciting to see how everything connects together.
@@ -409,7 +406,6 @@ function deleteProjectsAndAddChat() {
       <div class="project-tools">
         <img src="images/html.svg" alt="HTML" title="HTML">
         <img src="images/css.svg" alt="CSS" title="CSS">
-        <img src="images/sass.svg" alt="SASS" title="SASS">
         <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
         <img src="images/react.svg" alt="React" title="React">
         <img src="images/redux.svg" alt="Redux" title="Redux">
@@ -422,8 +418,8 @@ function deleteProjectsAndAddChat() {
         <img src="images/heroku.svg" alt="Heroku" title="Heroku">
       </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
-      <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://chatrailsredux.herokuapp.com" target="_blank">Website</a></mark></p>
-      <p style="text-align: right;"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://github.com/juagarca/chat-rails-redux" target="_blank">Repo on github</a></mark></p>
+      <p style="text-align: right; color:"><mark><a href="https://chatrailsredux.herokuapp.com" target="_blank">Website</a></mark></p>
+      <p style="text-align: right;"><mark><a href="https://github.com/juagarca/chat-rails-redux" target="_blank">Repo on github</a></mark></p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
@@ -450,12 +446,23 @@ function deleteProjectsAndAddGarage() {
         <img src="images/Garage/garage02.png" class="garage-image">
       </div>
       <img src="images/Garage/garage03.png" class="garage-image" style="margin-top: 16px;">
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
-      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Tools</h3>
-      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
+      <p style="text-align: right;">This little garage application was my first React application using Router 💪🏼</p>
+      <p style="text-align: right;">The purpose was to create a SPA to keep track of the cars 🚘 entering the garage. Basically, a little CRUD app backed by a REST API. </p>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Tools</h3>
+      <div class="project-tools">
+        <img src="images/html.svg" alt="HTML" title="HTML">
+        <img src="images/css.svg" alt="CSS" title="CSS">
+        <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="images/react.svg" alt="React" title="React">
+        <img src="images/redux.svg" alt="Redux" title="Redux">
+        <img src="images/ajax.svg" alt="AJAX" title="AJAX">
+        <img src="images/github.svg" alt="Github" title="Github">
+        <img src="images/git.svg" alt="Git" title="Git">
+      </div>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
+      <p style="text-align: right;"><mark><a href="https://github.com/juagarca/garage-redux" target="_blank">Repo on github</a></mark></p>
+
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', garageHTML);

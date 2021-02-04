@@ -67,6 +67,7 @@ mark {
 
 mark:hover {
   border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 /*Layout*/
@@ -421,7 +422,7 @@ mark:hover {
 }
 
 .hiremyhound-image {
-  width: 320px;
+  width: 312px;
   border: 1px solid #3D4145;
   margin: 0 auto;
   border-radius: 5px;
@@ -449,7 +450,7 @@ mark:hover {
 }
 
 .garage-image {
-  width: 320px;
+  width: 312px;
   border: 1px solid #3D4145;
   border-radius: 5px;
 }
