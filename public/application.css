@@ -21,11 +21,11 @@ body {
 }
 
 a {
-  color: white;
+  color: #74767A !important;
 }
 
 a:hover {
-  color: white;
+  color: white !important;
 }
 
 a:link {
@@ -111,12 +111,13 @@ p {
 }
 
 .button-summary {
-  border: 1px solid #3D4145;
-  color: #74767A;
+  border: 1px solid white;
+  color: white;
   padding: 8px;
-  margin: 0 0 0 8px;
+  margin: 0 8px 0 8px;
   border-radius: 50%;
-  background: #161B22;
+  background: black;
+  cursor: default;
 }
 
 .project-button {
@@ -360,6 +361,17 @@ p {
 
 .show-project {
   opacity: 1;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.project-tools > img {
+  width: 34px;
+  margin-left: 8px;
 }
 
 .pintpal-images-container {

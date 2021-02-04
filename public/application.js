@@ -145,7 +145,7 @@ const summaryHTML =
     <div id="story-marquee" class="marquee"><h2>The Story So Far</h2></div>
     <p>Even though I worked as a <mark style="background-color: #0D1117; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
     <p style="color: white; font-size: 16px;">I ended up securing a job in well known retailer and decided to take it as I needed to start earning 💰</p>
-    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <a style="color: #white;"target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a> or <a style="color: #white;"target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></p>
+    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a></mark> or <mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></mark></p>
     <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment  <span id="next-present" class="project-button" onClick="resetPresentMarquee();">Next</span></p>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br>
@@ -156,7 +156,7 @@ const summaryHTML =
       <div id="present-marquee" class="marquee"><h2 style="text-align:right;">At Present</h2></div>
       <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the <mark style="background-color: #0D1117; color: white;">House of Juagarca</mark> was born!</p>
       <p style="text-align: right;">In 2020 I graduated from <mark style="background-color: #0D1117; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
-      <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my <mark style="background-color: #0D1117; color: white;">projects</mark> which I will be addding to the<a><i class="fas fa-tools button-summary" style="margin-right: 8px;"></i></a>section, also available on <a style="color: #74767A;"target="_blank" href="https://www.github.com/juagarca">Github</a>       <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
+      <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my projects which I will be addding to the<i class="fas fa-tools button-summary"></i>section and<i class="fab fa-github button-summary"></i><span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
     </div>
     <div style="width: 62%;"></div>
   </div>
@@ -165,7 +165,7 @@ const summaryHTML =
     <div>
       <div id="interests-marquee" class="marquee"><h2>Interests</h2></div>
       <p>The idea behind this project was to create an app where I could showcase both my portfolio and personal interests 🤷🏻‍♂️</p>
-      <p>I'm obsessed with <mark style="background-color: #0D1117; color: white;">music</mark> & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <a style="color: white;"target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></p>
+      <p>I'm obsessed with <mark style="background-color: #0D1117; color: white;">music</mark> & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></mark></p>
       <p style="color: white; font-size: 16px;">I try to go on <mark style="background-color: #0D1117; color: white;">holidays</mark> as much as I can, shocking right? I thought I'd share with you some of my favourite spots?</p>
     </div>
     <div style="width: 75%;"></div>
@@ -268,7 +268,27 @@ function deleteProjectsAndAddPintpal() {
       <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
       <br>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Tools</h3>
-      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+      <div class="project-tools">
+        <img src="images/html.svg" alt="HTML" title="HTML">
+        <img src="images/css.svg" alt="CSS" title="CSS">
+        <img src="images/sass.svg" alt="SASS" title="SASS">
+        <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="images/ajax.svg" alt="AJAX" title="AJAX">
+        <img src="images/ruby.svg" alt="Ruby" title="Ruby">
+        <img src="images/rails.svg" alt="Rails" title="Rails">
+        <img src="images/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+        <img src="images/github.svg" alt="Github" title="Github">
+        <img src="images/git.svg" alt="Git" title="Git">
+        <img src="images/heroku.svg" alt="Heroku" title="Heroku">
+        <img src="images/figma.svg" alt="Figma" title="Figma">
+        <img src="images/illustrator.svg" alt="Adobe Illustrator" title="Adobe Illustrator">
+        <img src="images/slack.svg" alt="Slack" title="Slack">
+        <img src="images/trello.svg" alt="Trello" title="Trello">
+      </div>
+      <br>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Links</h3>
+      <p style="text-align: right; color:"><a href="https://www.pintpal.me" target="_blank">Live website</a></p>
+      <p style="text-align: right;"><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
@@ -332,7 +352,6 @@ function deleteProjectsAndAddChat() {
       <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
       <br>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Tools</h3>
-      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
