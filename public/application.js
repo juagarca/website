@@ -165,7 +165,7 @@ const summaryHTML =
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br>
   <div id="present"></div>
-  <br>
+  <br><br>
   <div style="display: flex;" >
     <div>
       <div id="present-marquee" class="marquee"><h2 style="text-align:right;">At Present</h2></div>
