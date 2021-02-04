@@ -122,7 +122,7 @@ function resetInterestsMarquee() {
 // Html for summary section
 const summaryHTML =
   `<br> <br><br>
-  <h1>Hola 👋🏼 I'm Juan</h1>
+  <h1>Hola <span id="wave">👋🏼</span> I'm Juan</h1>
   <h1>Thank you for visiting</h1>
   <h1>the House of Juagarca</h1>
   <br>
