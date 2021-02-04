@@ -222,22 +222,22 @@ const projectsHTML =
   `<h2>Projects</h2>
   <div class="project-container" id="pintpal-container">
     <div id="pintpal" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/pintpal.png');">
-      PintPal
+      <h2>PintPal</h2>
     </div>
   </div>
   <div class="project-container" id="hiremyhound-container">
     <div id="hiremyhound" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hiremyhound.png');">
-      HireMyHound
+      <h2>HireMyHound</h2>
     </div>
   </div>
   <div class="project-container" id="chat-container">
     <div id="chat" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/chat.png');">
-      Chat
+      <h2>Chat</h2>
     </div>
   </div>
   <div class="project-container" id="garage-container">
     <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/garage.png');">
-      Garage
+      <h2>Garage</h2>
     </div>
   </div>`;
 
@@ -265,9 +265,11 @@ function deleteProjectsAndAddPintpal() {
       </div>
       <br>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
-      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Tools</h3>
+      <p style="text-align: right;">PintPal was created during my time at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
+      <p style="text-align: right;">The app includes an interactive map of London venues offering outdoor space & heating 🔥 You are also able to book a venue to meet your friends and have a live conversation 💬 with the venue staff in case you are delayed for your reservation and would like to keep your table.</p>
+      <p style="text-align: right;">After your visit, your receive a notification to remind you to review your visit 🚀</p>
+      <p style="text-align: right;">This app was created only in 9 days, cheers! 🍻 </p>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Tools</h3>
       <div class="project-tools">
         <img src="images/html.svg" alt="HTML" title="HTML">
         <img src="images/css.svg" alt="CSS" title="CSS">
@@ -285,10 +287,9 @@ function deleteProjectsAndAddPintpal() {
         <img src="images/slack.svg" alt="Slack" title="Slack">
         <img src="images/trello.svg" alt="Trello" title="Trello">
       </div>
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Links</h3>
-      <p style="text-align: right; color:"><a href="https://www.pintpal.me" target="_blank">Live website</a></p>
-      <p style="text-align: right;"><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></p>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
+      <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
+      <p style="text-align: right;"><mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
