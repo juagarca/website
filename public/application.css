@@ -233,7 +233,7 @@ mark:hover {
 }
 
 .flip-box-back {
-  background-color: #161B22;
+  background-color: black;
   transform: rotateX(180deg);
   border: 1px solid white;
   border-radius: 5px;
@@ -479,9 +479,8 @@ mark:hover {
   transition: opacity 0.9s ease-out;
 }
 
-
-.cv-container::-webkit-scrollbar {
-  display: none;
+.cv {
+  margin-top: 16px;
 }
 
 .cv:hover {
