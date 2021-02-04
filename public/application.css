@@ -59,6 +59,16 @@ p {
   font-size: 16px;
 }
 
+mark {
+ padding: 0 0 .2em 0;
+ background-color: transparent;
+ border-bottom: 1px solid #3D4145;
+}
+
+mark:hover {
+  border-bottom: 1px solid white;
+}
+
 /*Layout*/
 
 .app {
@@ -98,7 +108,7 @@ p {
 .button {
   border: 1px solid #3D4145;
   color: #74767A;
-  padding: 8px;
+  padding: 6px 8px;
   margin: 0 0 0 8px;
   border-radius: 50%;
   background: #161B22;
@@ -115,7 +125,7 @@ p {
   border: 1px solid white;
   color: white;
   padding: 8px;
-  margin: 0 8px 0 8px;
+  margin: 0 0 0 8px;
   border-radius: 50%;
   background: black;
   cursor: default;
@@ -124,10 +134,11 @@ p {
 .project-button {
   border: 1px solid #3D4145;
   color: #74767A;
-  padding: 6px 8px;
+  padding: 0px 20px;
   margin: 0 0 0 8px;
-  border-radius: 5px;
+  border-radius: 50%;
   background: #161B22;
+  font-size: 120px;
 }
 
 .project-button:hover {

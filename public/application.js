@@ -121,52 +121,68 @@ function resetInterestsMarquee() {
 
 // Html for summary section
 const summaryHTML =
-  `<br> <br><br> <br><br><br>
+  `<br> <br><br>
   <h1>Hola 👋🏼 I'm Juan</h1>
   <h1>Thank you for visiting</h1>
   <h1>the House of Juagarca</h1>
   <br>
-  <p>A software house with a <mark style="background-color: #0D1117; color: white; ">different</mark> perspective 👀   <span id="start" class="project-button" onClick="resetBackgroundMarquee();">Start</span></p>
-  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br>
+  <p>A software house with a different perspective  👀</p>
+  <div style="text-align: right;">
+    <span id="start" class="project-button" onClick="resetBackgroundMarquee();"><i class="fas fa-arrow-right"></i></span>
+  </div>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br><br>
   <div id="background"></div>
-  <br><br><br><br><br><br><br>
+  <br><br><br><br>
   <div style="display: flex;">
-    <div style="width: 75%;"></div>
+    <div style="width: 75%;">
+    </div>
     <div>
       <div id="background-marquee" class="marquee"><h2 style="text-align:right;">My background</h2></div>
-      <p style="text-align: right;">I was born in Valencia 🇪🇸 where I completed a BSc in <mark style="background-color: #0D1117; color: white;">Software Engineering</mark></p><p style="text-align: right;">Upon completion of my degree, I decided to move to London where I have been living and working for over a decade 😱</p>
-      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home  <span style="text-align: right;" id="next-story" class="project-button";>Next</span></p>
+      <p style="text-align: right;">I was born in Valencia 🇪🇸 where I completed a BSc in Software Engineering</p>
+      <p style="text-align: right;">Upon completion of my degree, I decided to move to London where I have been living and working for over a decade 😱</p>
+      <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home</p>
     </div>
   </div>
-  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br>
+  <span style="margin-left: 144px;" id="next-story" class="project-button";><i class="fas fa-arrow-right"></i></span>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br><br> <br><br>
   <div id="story"></div>
-  <br><br><br><br>
-  <div style="width: 496px; margin: 0 auto;">
-    <div id="story-marquee" class="marquee"><h2>The Story So Far</h2></div>
-    <p>Even though I worked as a <mark style="background-color: #0D1117; color: white;">Junior Dev</mark> 🧑🏻‍💻 right after finishing my degree, when I came to London I found difficult to find a Dev role</p>
-    <p style="color: white; font-size: 16px;">I ended up securing a job in well known retailer and decided to take it as I needed to start earning 💰</p>
-    <p>Since that point, I gained experience in different roles and industries. However, something is always been missing. Full details of my experience can be found on my <mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a></mark> or <mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></mark></p>
-    <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment  <span id="next-present" class="project-button" onClick="resetPresentMarquee();">Next</span></p>
+  <br> <br>
+  <div style="display: flex;">
+    <div style="width: 424px;">
+      <br> <br>
+      <div id="story-marquee" class="marquee"><h2>The Story So Far</h2></div>
+      <p>When I moved to London I found difficult to find a Dev role 🧑🏻‍💻</p>
+      <p style="color: white; font-size: 16px;">I ended up securing a job in a well known retailer and decided to take it as I needed to start earning 💰</p>
+      <p>Since that point, I gained experience in different roles and industries. However, something is always been missing.</p>
+      <p>Full details of my experience can be found on my <mark><a target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a></mark> or <mark><a target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></mark></p>
+      <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment</p>
+    </div>
+    <div style="text-align: right; width: 33%;">
+      <span id="next-present" class="project-button" onClick="resetPresentMarquee();"><i class="fas fa-arrow-right"></i></span>
+    </div>
   </div>
-  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br>
+  <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br>
   <div id="present"></div>
-  <br><br><br><br><br>
+  <br>
   <div style="display: flex;" >
     <div>
       <div id="present-marquee" class="marquee"><h2 style="text-align:right;">At Present</h2></div>
-      <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the <mark style="background-color: #0D1117; color: white;">House of Juagarca</mark> was born!</p>
-      <p style="text-align: right;">In 2020 I graduated from <mark style="background-color: #0D1117; color: white;">Le Wagon</mark> the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
-      <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my projects which I will be addding to the<i class="fas fa-tools button-summary"></i>section and<i class="fab fa-github button-summary"></i><span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";>Next</span></p>
+      <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the House of Juagarca was born!</p>
+      <p style="text-align: right;">In 2020 I graduated from Le Wagon the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
+      <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my projects which I will be addding to the<i class="fas fa-tools button-summary" style="margin-right: 8px;"></i>section and<i class="fab fa-github button-summary"></i></p>
     </div>
-    <div style="width: 62%;"></div>
+    <div style="width: 62%;">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";><i class="fas fa-arrow-right"></i></span>
+    </div>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br><br><br>
   <div style="display: flex;" id="interests">
     <div>
       <div id="interests-marquee" class="marquee"><h2>Interests</h2></div>
       <p>The idea behind this project was to create an app where I could showcase both my portfolio and personal interests 🤷🏻‍♂️</p>
-      <p>I'm obsessed with <mark style="background-color: #0D1117; color: white;">music</mark> & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></mark></p>
-      <p style="color: white; font-size: 16px;">I try to go on <mark style="background-color: #0D1117; color: white;">holidays</mark> as much as I can, shocking right? I thought I'd share with you some of my favourite spots?</p>
+      <p>I'm obsessed with music & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <mark><a target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></mark></p>
+      <p style="color: white; font-size: 16px;">I try to go on holidays as much as I can, shocking right? I thought I'd share with you some of my favourite spots?</p>
     </div>
     <div style="width: 75%;"></div>
   </div>`;
@@ -288,8 +304,8 @@ function deleteProjectsAndAddPintpal() {
         <img src="images/trello.svg" alt="Trello" title="Trello">
       </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
-      <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
-      <p style="text-align: right;"><mark style="border-bottom: 1px solid #74767A; background-color:#0D1117;"><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
+      <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
+      <p style="text-align: right;"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
