@@ -402,9 +402,28 @@ function deleteProjectsAndAddChat() {
       </div>
       <br>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
-      <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
-      <br>
-      <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Tools</h3>
+      <p style="text-align: right;">This is a live chat 💬 application which I created with React & Redux and is protected 🔒by a Devise sign in.</p>
+      <p style="text-align: right;">I also had to provide an API for the front-end, as Redux action creators needed to retrieve information from Rails.</p>
+      <p style="text-align: right;">This is my first React & Rails application 🙌🏼 and it was so exciting to see how everything connects together.
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Tools</h3>
+      <div class="project-tools">
+        <img src="images/html.svg" alt="HTML" title="HTML">
+        <img src="images/css.svg" alt="CSS" title="CSS">
+        <img src="images/sass.svg" alt="SASS" title="SASS">
+        <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
+        <img src="images/react.svg" alt="React" title="React">
+        <img src="images/redux.svg" alt="Redux" title="Redux">
+        <img src="images/ajax.svg" alt="AJAX" title="AJAX">
+        <img src="images/ruby.svg" alt="Ruby" title="Ruby">
+        <img src="images/rails.svg" alt="Rails" title="Rails">
+        <img src="images/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+        <img src="images/github.svg" alt="Github" title="Github">
+        <img src="images/git.svg" alt="Git" title="Git">
+        <img src="images/heroku.svg" alt="Heroku" title="Heroku">
+      </div>
+      <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
+      <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://chatrailsredux.herokuapp.com" target="_blank">Website</a></mark></p>
+      <p style="text-align: right;"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://github.com/juagarca/chat-rails-redux" target="_blank">Repo on github</a></mark></p>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
