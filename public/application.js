@@ -98,27 +98,6 @@ function scrollToTop() {
   document.querySelector('.main').scrollTop = 0;
 };
 
-// Click event for logos to show name of tool
-// logos = document.querySelector('.tools-card .tools').getElementsByTagName('img');
-// for (let logo of logos) {
-//     logo.addEventListener('click', (event) => {
-//       // document.querySelector('.text').remove();
-//       const x = event.screenX;
-//       const y = event.screenY;
-//       const html = `<div class="text" style='background: black; color: white; position: absolute; left:${x+10}px; top: ${y-130}px; padding: 2px 4px;'>
-//                       <small>${logo.alt}</small>
-//                     </div>`;
-//       document.querySelector('.main').insertAdjacentHTML('beforeEnd', html);
-//     });
-// }
-
-// //if there is a tool displayed, then it removes it
-// document.addEventListener('mouseup', (event) => {
-//   if (document.querySelector('.text')) {
-//     document.querySelector('.text').remove();
-//   }
-// });
-
 // Summary marquees
 function resetBackgroundMarquee() {
   marquee = document.getElementById('background-marquee');
@@ -403,24 +382,6 @@ homeBtn.addEventListener('click', (event) => {
   setTimeout(function(){ summary.classList.add('show'); }, 400);
   setTimeout(buttonsTransition, 400);
 
-  // Click event for project button in summary
-  // summaryProjectBtn = document.querySelectorAll('.fa-tools')[1];
-  // summaryProjectBtn.addEventListener('click', (event) => {
-
-  //   scrollToTop();
-  //   if (summary.classList.contains('show')) {
-  //     summary.classList.remove('show')
-  //   }
-  //   summary.innerHTML = "";
-
-  //   if (projects.classList.contains('show')) {
-  //     projects.classList.remove('show');
-  //   }
-  //   projects.innerHTML = "";
-  //   setTimeout(function(){ projects.insertAdjacentHTML('beforeend', projectsHTML); }, 200);
-  //   setTimeout(function(){ projects.classList.add('show'); }, 200);
-  // });
-
   if (projects.classList.contains('show')) {
     projects.classList.remove('show')
   }
@@ -432,6 +393,79 @@ homeBtn.addEventListener('click', (event) => {
   }
   cv.innerHTML = "";
 });
+
+// Setting up click events for cards
+function clickEventsForProjectCards() {
+  // Selecting project cards
+  const pintpalCard = document.getElementById('pintpal');
+  const hiremyhoundCard = document.getElementById('hiremyhound');
+  const chatCard = document.getElementById('chat');
+  const garageCard = document.getElementById('garage');
+
+  // Click event for pintpalCard
+  pintpalCard.addEventListener('click', (event) => {
+    pintpalCard.classList.remove('show-card');
+    hiremyhound.classList.remove('show-card');
+    chat.classList.remove('show-card');
+    garage.classList.remove('show-card');
+
+    // Remove container border
+    document.getElementById('pintpal-container').style.border = 'none';
+    document.getElementById('hiremyhound-container').style.border = 'none';
+    document.getElementById('chat-container').style.border = 'none';
+    document.getElementById('garage-container').style.border = 'none';
+
+    setTimeout(deleteProjectsAndAddPintpal, 500);
+  });
+
+  // Click event for hiremyhoundCard
+  hiremyhoundCard.addEventListener('click', (event) => {
+    pintpalCard.classList.remove('show-card');
+    hiremyhound.classList.remove('show-card');
+    chat.classList.remove('show-card');
+    garage.classList.remove('show-card');
+
+    // Remove container border
+    document.getElementById('pintpal-container').style.border = 'none';
+    document.getElementById('hiremyhound-container').style.border = 'none';
+    document.getElementById('chat-container').style.border = 'none';
+    document.getElementById('garage-container').style.border = 'none';
+
+    setTimeout(deleteProjectsAndAddHireMyHound, 500);
+  });
+
+  // Click event for chatCard
+  chatCard.addEventListener('click', (event) => {
+    pintpalCard.classList.remove('show-card');
+    hiremyhound.classList.remove('show-card');
+    chat.classList.remove('show-card');
+    garage.classList.remove('show-card');
+
+    // Remove container border
+    document.getElementById('pintpal-container').style.border = 'none';
+    document.getElementById('hiremyhound-container').style.border = 'none';
+    document.getElementById('chat-container').style.border = 'none';
+    document.getElementById('garage-container').style.border = 'none';
+
+    setTimeout(deleteProjectsAndAddChat, 500);
+  });
+
+  // Click event for garageCard
+  garageCard.addEventListener('click', (event) => {
+    pintpalCard.classList.remove('show-card');
+    hiremyhound.classList.remove('show-card');
+    chat.classList.remove('show-card');
+    garage.classList.remove('show-card');
+
+    // Remove container border
+    document.getElementById('pintpal-container').style.border = 'none';
+    document.getElementById('hiremyhound-container').style.border = 'none';
+    document.getElementById('chat-container').style.border = 'none';
+    document.getElementById('garage-container').style.border = 'none';
+
+    setTimeout(deleteProjectsAndAddGarage, 500);
+  });
+}
 
 //Click event for project buttons
 projectBtns = document.querySelectorAll('.fa-tools');
@@ -459,75 +493,8 @@ projectBtns.forEach((projectBtn) => {
     }
     cv.innerHTML = "";
 
-    // Selecting project cards
-    const pintpalCard = document.getElementById('pintpal');
-    const hiremyhoundCard = document.getElementById('hiremyhound');
-    const chatCard = document.getElementById('chat');
-    const garageCard = document.getElementById('garage');
-
-    // Click event for pintpalCard
-    pintpalCard.addEventListener('click', (event) => {
-      pintpalCard.classList.remove('show-card');
-      hiremyhound.classList.remove('show-card');
-      chat.classList.remove('show-card');
-      garage.classList.remove('show-card');
-
-      // Remove container border
-      document.getElementById('pintpal-container').style.border = 'none';
-      document.getElementById('hiremyhound-container').style.border = 'none';
-      document.getElementById('chat-container').style.border = 'none';
-      document.getElementById('garage-container').style.border = 'none';
-
-      setTimeout(deleteProjectsAndAddPintpal, 500);
-    });
-
-    // Click event for hiremyhoundCard
-    hiremyhoundCard.addEventListener('click', (event) => {
-      pintpalCard.classList.remove('show-card');
-      hiremyhound.classList.remove('show-card');
-      chat.classList.remove('show-card');
-      garage.classList.remove('show-card');
-
-      // Remove container border
-      document.getElementById('pintpal-container').style.border = 'none';
-      document.getElementById('hiremyhound-container').style.border = 'none';
-      document.getElementById('chat-container').style.border = 'none';
-      document.getElementById('garage-container').style.border = 'none';
-
-      setTimeout(deleteProjectsAndAddHireMyHound, 500);
-    });
-
-    // Click event for chatCard
-    chatCard.addEventListener('click', (event) => {
-      pintpalCard.classList.remove('show-card');
-      hiremyhound.classList.remove('show-card');
-      chat.classList.remove('show-card');
-      garage.classList.remove('show-card');
-
-      // Remove container border
-      document.getElementById('pintpal-container').style.border = 'none';
-      document.getElementById('hiremyhound-container').style.border = 'none';
-      document.getElementById('chat-container').style.border = 'none';
-      document.getElementById('garage-container').style.border = 'none';
-
-      setTimeout(deleteProjectsAndAddChat, 500);
-    });
-
-    // Click event for garageCard
-    garageCard.addEventListener('click', (event) => {
-      pintpalCard.classList.remove('show-card');
-      hiremyhound.classList.remove('show-card');
-      chat.classList.remove('show-card');
-      garage.classList.remove('show-card');
-
-      // Remove container border
-      document.getElementById('pintpal-container').style.border = 'none';
-      document.getElementById('hiremyhound-container').style.border = 'none';
-      document.getElementById('chat-container').style.border = 'none';
-      document.getElementById('garage-container').style.border = 'none';
-
-      setTimeout(deleteProjectsAndAddGarage, 500);
-    });
+    // Setting up click events for cards
+    setTimeout(clickEventsForProjectCards, 300);
   });
 });
 
