@@ -108,7 +108,7 @@ mark:hover {
 .button {
   border: 1px solid #3D4145;
   color: #74767A;
-  padding: 6px 8px;
+  padding: 6px 7px;
   margin: 0 0 0 8px;
   border-radius: 50%;
   background: #161B22;
@@ -131,22 +131,35 @@ mark:hover {
   cursor: default;
 }
 
-.project-button {
+.navigation-button-container {
+  writing-mode: tb-rl;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 156px;
+  width: 156px;
+}
+
+.navigation-button {
   border: 1px solid #3D4145;
   color: #74767A;
-  padding: 0px 20px;
-  margin: 0 0 0 8px;
+  padding: 8px;
+  /*margin: 0 0 0 8px;*/
   border-radius: 50%;
   background: #161B22;
   font-size: 120px;
+  transition: all 0.3s ease-out;
 }
 
-.project-button:hover {
-  transition: all 0.5s ease-out;
+.navigation-button:hover {
   border: 1px solid white;
   color: white;
   background: black;
   cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(90deg);
 }
 
 /*Navbar*/

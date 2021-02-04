@@ -127,8 +127,8 @@ const summaryHTML =
   <h1>the House of Juagarca</h1>
   <br>
   <p>A software house with a different perspective  👀</p>
-  <div style="text-align: right;">
-    <span id="start" class="project-button" onClick="resetBackgroundMarquee();"><i class="fas fa-arrow-right"></i></span>
+  <div class="navigation-button-container" style="margin-left: 488px;">
+    <i class="fas fa-arrow-right navigation-button" id="start" style=""onClick="resetBackgroundMarquee();"></i>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br><br>
   <div id="background"></div>
@@ -143,7 +143,9 @@ const summaryHTML =
       <p style="text-align: right; font-size: 16px; color: white;">I ❤️ this city and consider it my home</p>
     </div>
   </div>
-  <span style="margin-left: 144px;" id="next-story" class="project-button";><i class="fas fa-arrow-right"></i></span>
+  <div class="navigation-button-container">
+    <i style="margin-left: 256px;" class="fas fa-arrow-right navigation-button" id="next-story"></i>
+  </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br><br> <br><br>
   <div id="story"></div>
   <br> <br>
@@ -157,8 +159,8 @@ const summaryHTML =
       <p>Full details of my experience can be found on my <mark><a target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a></mark> or <mark><a target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></mark></p>
       <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment</p>
     </div>
-    <div style="text-align: right; width: 33%;">
-      <span id="next-present" class="project-button" onClick="resetPresentMarquee();"><i class="fas fa-arrow-right"></i></span>
+    <div style="text-align: right; width: 33%;" class="navigation-button-container">
+      <i id="next-present" class="fas fa-arrow-right navigation-button" onClick="resetPresentMarquee();"></i>
     </div>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br>
@@ -173,7 +175,9 @@ const summaryHTML =
     </div>
     <div style="width: 62%;">
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <span style="text-align: center;" id="next-interest" class="project-button" onClick="resetInterestsMarquee()";><i class="fas fa-arrow-right"></i></span>
+      <div class="navigation-button-container">
+        <i id="next-interest" class="fas fa-arrow-right navigation-button" onClick="resetInterestsMarquee()";></i>
+      </div>
     </div>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br><br><br>
@@ -196,40 +200,52 @@ setTimeout(scrollToTop, 900);
 
 // Summary buttons transitions
 function buttonsTransition() {
-  document.getElementById('start').addEventListener('click', () => {
+  document.getElementById('start').addEventListener('click', (event) => {
+    event.currentTarget.classList.add('rotate');
+    setTimeout(function() {
       document.getElementById('background').scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
       });
       resetBackgroundMarquee();
+    }, 300);
   });
 
   document.getElementById('next-story').addEventListener('click', () => {
+    event.currentTarget.classList.add('rotate');
+    setTimeout(function() {
       document.getElementById('story').scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
       });
       resetStoryMarquee();
+    }, 300);
   });
 
   document.getElementById('next-present').addEventListener('click', () => {
+    event.currentTarget.classList.add('rotate');
+    setTimeout(function() {
       document.getElementById('present').scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
       });
       resetPresentMarquee();
+    }, 300);
   });
 
   document.getElementById('next-interest').addEventListener('click', () => {
+    event.currentTarget.classList.add('rotate');
+    setTimeout(function() {
       document.getElementById('interests').scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
       });
       resetInterestsMarquee();
+    }, 300);
   });
 }
 
@@ -284,7 +300,7 @@ function deleteProjectsAndAddPintpal() {
       <p style="text-align: right;">PintPal was created during my time at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
       <p style="text-align: right;">The app includes an interactive map of London venues offering outdoor space & heating 🔥 You are also able to book a venue to meet your friends and have a live conversation 💬 with the venue staff in case you are delayed for your reservation and would like to keep your table.</p>
       <p style="text-align: right;">After your visit, your receive a notification to remind you to review your visit 🚀</p>
-      <p style="text-align: right;">This app was created only in 9 days, cheers! 🍻 </p>
+      <p style="text-align: right;">This app was created in only 9 days, cheers! 🍻 </p>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Tools</h3>
       <div class="project-tools">
         <img src="images/html.svg" alt="HTML" title="HTML">
@@ -335,10 +351,30 @@ function deleteProjectsAndAddHireMyHound() {
     </div>
     <br>
     <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Description</h3>
-    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eos ullam, laborum mollitia, earum porro cupiditate? Neque laudantium alias, sapiente totam, ex asperiores ipsam quidem molestiae voluptatibus maiores amet suscipit. Aliquid!</p>
-    <br>
-    <h3 style="text-align: right; font-size: 18px; font-weight: bolder;">Tools</h3>
-    <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</p>
+    <p style="text-align: right;">HireMyHound is an Airbnb clone created at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
+    <p style="text-align: right;">The app includes a search function and an interactive map of dogs available for hire. Dogs and dog owners have profile pages where they display all their details and rates 💰</p>
+    <p style="text-align: right;">As a visitor you can read the blog and explore the 🐶 in your area, but if you wish to book one of the gorgeous pups you will need to create an account.</p>
+    <p style="text-align: right;">This app was created in only 4 days</p>
+    <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Tools</h3>
+    <div class="project-tools">
+      <img src="images/html.svg" alt="HTML" title="HTML">
+      <img src="images/css.svg" alt="CSS" title="CSS">
+      <img src="images/sass.svg" alt="SASS" title="SASS">
+      <img src="images/javascript.svg" alt="JavaScript" title="JavaScript">
+      <img src="images/ruby.svg" alt="Ruby" title="Ruby">
+      <img src="images/rails.svg" alt="Rails" title="Rails">
+      <img src="images/postgresql.svg" alt="PostgreSQL" title="PostgreSQL">
+      <img src="images/github.svg" alt="Github" title="Github">
+      <img src="images/git.svg" alt="Git" title="Git">
+      <img src="images/heroku.svg" alt="Heroku" title="Heroku">
+      <img src="images/figma.svg" alt="Figma" title="Figma">
+      <img src="images/illustrator.svg" alt="Adobe Illustrator" title="Adobe Illustrator">
+      <img src="images/slack.svg" alt="Slack" title="Slack">
+      <img src="images/trello.svg" alt="Trello" title="Trello">
+    </div>
+    <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
+    <p style="text-align: right; color:"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://hiremyhound.herokuapp.com" target="_blank">Website</a></mark></p>
+    <p style="text-align: right;"><mark style="border-bottom: 1px solid #3D4145; background-color:#0D1117;"><a href="https://github.com/juagarca/hire-my-hound" target="_blank">Repo on github</a></mark></p>
   </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
