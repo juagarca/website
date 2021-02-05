@@ -275,6 +275,7 @@ const projectsHTML =
 
 const projects = document.querySelector(".cards-projects");
 
+
 //Delete project cards and add PintPal Project
 function deleteProjectCardsAndAddPintPal() {
   document.getElementById('pintpal-project').classList.add("show-project");
@@ -291,9 +292,16 @@ function deleteProjectsAndAddPintpal() {
     `<div class="project" id='pintpal-project'>
       <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">PintPal</h3>
       <div class="pintpal-images-container">
-        <img src="images/PintPal/pintpal01.png" class="pintpal-image">
-        <img src="images/PintPal/pintpal02.png" class="pintpal-image">
-        <img src="images/PintPal/pintpal03.png" class="pintpal-image">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content-pintpal" id="img01">
+        </div>
+        <img src="images/PintPal/pintpal01.png" class="pintpal-image myImg">
+        <img src="images/PintPal/pintpal02.png" class="pintpal-image myImg">
+        <img src="images/PintPal/pintpal03.png" class="pintpal-image myImg">
       </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
       <p style="text-align: right;">PintPal was created during my time at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
@@ -326,11 +334,33 @@ function deleteProjectsAndAddPintpal() {
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
   setTimeout(deleteProjectCardsAndAddPintPal, 0);
   scrollToTop();
+
+  // Get the modals
+  const modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  const images = document.querySelectorAll(".myImg");
+  const modalImg = document.getElementById("img01");
+  images.forEach((img) => {
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
 //Delete project cards and add HireMyHound Project
 function deleteProjectCardsAndAddHireMyHound() {
   document.getElementById('hiremyhound-project').classList.add("show-project");
+  scrollToTop();
 }
 
 function deleteProjectsAndAddHireMyHound() {
@@ -343,10 +373,17 @@ function deleteProjectsAndAddHireMyHound() {
   `<div class="project" id='hiremyhound-project'>
     <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">HireMyHound</h3>
     <div class="hiremyhound-images-container">
-      <img src="images/HireMyHound/hiremyhound01.png" class="hiremyhound-image">
-      <img src="images/HireMyHound/hiremyhound02.png" class="hiremyhound-image">
-      <img src="images/HireMyHound/hiremyhound03.png" class="hiremyhound-image">
-      <img src="images/HireMyHound/hiremyhound04.png" class="hiremyhound-image">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+      </div>
+      <img src="images/HireMyHound/hiremyhound01.png" class="hiremyhound-image myImg">
+      <img src="images/HireMyHound/hiremyhound02.png" class="hiremyhound-image myImg">
+      <img src="images/HireMyHound/hiremyhound03.png" class="hiremyhound-image myImg">
+      <img src="images/HireMyHound/hiremyhound04.png" class="hiremyhound-image myImg">
     </div>
     <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
     <p style="text-align: right;">HireMyHound is an Airbnb clone created at Le Wagon with 3 friends 🙋🏼‍♀️🙋🏼‍♂️🙋🏻‍♂️🙋🏽‍♂️</p>
@@ -377,6 +414,27 @@ function deleteProjectsAndAddHireMyHound() {
 
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
   setTimeout(deleteProjectCardsAndAddHireMyHound, 0);
+
+  // Get the modals
+  const modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  const images = document.querySelectorAll(".myImg");
+  const modalImg = document.getElementById("img01");
+  images.forEach((img) => {
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
 //Delete project cards and add Chat Project
@@ -396,7 +454,14 @@ function deleteProjectsAndAddChat() {
     `<div class="project" id='chat-project'>
       <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Chat</h3>
       <div class="chat-images-container">
-        <img src="images/Chat/chat01.png" class="chat-image">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+        </div>
+        <img src="images/Chat/chat01.png" class="chat-image myImg">
       </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
       <p style="text-align: right;">This is a live chat 💬 application which I created with React & Redux and is protected 🔒by a Devise sign in.</p>
@@ -425,6 +490,27 @@ function deleteProjectsAndAddChat() {
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
   setTimeout(deleteProjectCardsAndAddChat, 0);
   scrollToTop();
+
+  // Get the modals
+  const modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  const images = document.querySelectorAll(".myImg");
+  const modalImg = document.getElementById("img01");
+  images.forEach((img) => {
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
 //Delete project cards and add Garage Project
@@ -442,10 +528,17 @@ function deleteProjectsAndAddGarage() {
     `<div style="text-align: center;" class="project" id="garage-project">
       <h3 style="text-align: right; font-size: 24px; font-weight: bolder;">Garage</h3>
       <div class="garage-images-container">
-        <img src="images/Garage/garage01.png" class="garage-image">
-        <img src="images/Garage/garage02.png" class="garage-image">
+        <img src="images/Garage/garage01.png" class="garage-image myImg">
+        <img src="images/Garage/garage02.png" class="garage-image myImg">
       </div>
-      <img src="images/Garage/garage03.png" class="garage-image" style="margin-top: 16px;">
+      <img src="images/Garage/garage03.png" class="garage-image myImg" style="margin-top: 16px;">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+      </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Description</h3>
       <p style="text-align: right;">This little garage application was my first React application using Router 💪🏼</p>
       <p style="text-align: right;">The purpose was to create a SPA to keep track of the cars 🚘 entering the garage. Basically, a little CRUD app backed by a REST API. </p>
@@ -468,6 +561,27 @@ function deleteProjectsAndAddGarage() {
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
   setTimeout(deleteProjectCardsAndAddGarage, 0);
   scrollToTop();
+
+  // Get the modals
+  const modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  const images = document.querySelectorAll(".myImg");
+  const modalImg = document.getElementById("img01");
+  images.forEach((img) => {
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  });
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 }
 
 //click event for home button
