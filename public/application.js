@@ -268,7 +268,7 @@ const projectsHTML =
     </div>
   </div>
   <div class="project-container" id="garage-container">
-    <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/garage.png');">
+    <div id="garage" class="show-card card-project" style="cursor: pointer; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Garage/garage02.png');">
       <h2>Garage</h2>
     </div>
   </div>`;
