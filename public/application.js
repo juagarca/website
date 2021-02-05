@@ -155,7 +155,7 @@ const summaryHTML =
       <div id="story-marquee" class="marquee"><h2>The Story So Far</h2></div>
       <p>When I moved to London I found difficult to find a Dev role 🧑🏻‍💻</p>
       <p style="color: white; font-size: 16px;">I ended up securing a job in a well known retailer and decided to take it as I needed to start earning 💰</p>
-      <p>Since that point, I gained experience in different roles and industries. However, something is always been missing.</p>
+      <p>Since that point, I gained experience in different roles and industries. However, something has always been missing.</p>
       <p>Full details of my experience can be found on my <mark><a target="_blank" href="https://www.linkedin.com/in/juagarca">LinkedIn</a></mark> or <mark><a target="_blank" href="https://drive.google.com/file/d/1H6HaIIZTF3muL4cZXoXDlEiMqOmLSRoE/view?usp=sharing">CV</a></mark></p>
       <p style="color: white; font-size: 16px;">Retail | Events | Experiential Marketing | Recruitment</p>
     </div>
@@ -170,7 +170,7 @@ const summaryHTML =
     <div>
       <div id="present-marquee" class="marquee"><h2 style="text-align:right;">At Present</h2></div>
       <p style="text-align: right;">I have restarted my tech career 🙌🏼 and this is how the House of Juagarca was born!</p>
-      <p style="text-align: right;">In 2020 I graduated from Le Wagon the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
+      <p style="text-align: right;">In 2020 I graduated from Le Wagon, the world's best coding bootcamp and it was one of the best experiences in my life 😃</p>
       <p style="color: white; font-size: 15px; text-align: right;">This is going to be a great year and along joining an awesome company, I will be working on my projects which I will be addding to the<i class="fas fa-tools button-summary" style="margin-right: 8px;"></i>section and<i class="fab fa-github button-summary"></i></p>
     </div>
     <div style="width: 62%;">
@@ -186,9 +186,9 @@ const summaryHTML =
       <div id="interests-marquee" class="marquee"><h2>Interests</h2></div>
       <p>The idea behind this project was to create an app where I could showcase both my portfolio and personal interests 🤷🏻‍♂️</p>
       <p>I'm obsessed with music & pop culture, here's a sneak peak to what I'm listening to. Need the full playlist? 😛 go ahead and visit my <mark><a target="_blank" href="https://www.last.fm/user/Darin86">last.fm</a></mark></p>
-      <p style="color: white; font-size: 16px;">I try to go on holidays as much as I can, shocking right? I thought I'd share with you some of my favourite spots?</p>
+      <p style="color: white; font-size: 16px;">I try to go on holidays as much as I can, shocking right? I thought I'd share with you some of my favourite destinations</p>
     </div>
-    <div style="width: 75%;"></div>
+    <div style="width: 60%;"></div>
   </div>`;
 
 //Populate summary by default
