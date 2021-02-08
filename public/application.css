@@ -197,7 +197,7 @@ mark:hover {
 
 .flip-box {
   background-color: transparent;
-  width: 250px;
+  width: 93%;
   height: 248px;
   /*border: 1px solid #3D4145;*/
   perspective: 1000px;
@@ -263,7 +263,7 @@ mark:hover {
 
 .tools-card {
   /*border-top: 1px solid #3D4145;*/
-  width: 250px;
+  /*width: 250px;*/
   margin-bottom: 8px;
 }
 
@@ -275,7 +275,7 @@ mark:hover {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
-  width: 257px;
+  width: 93%;
 }
 
 .tools-card .tools img {
@@ -724,3 +724,36 @@ mark:hover {
   /*margin: 0 0 0 8px;*/
   font-size: 11px;
 }
+
+
+/*default: Extra small devices (Portrait phone 👉 less than 576px)
+sm: Small devices (Landscape phone 👉 576px and up)
+md: Medium devices (Tablet 👉 768px and up)
+lg: Large devices (Desktops 👉 992px and up)
+xl: Extra large devices (Large desktops 👉 1200px and up)
+*/
+
+@media(max-width: 767px) {
+  .tools {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 768px) {
+  .tools {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 992px) {
+  .tools {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 1200px) {
+  .tools {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
