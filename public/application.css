@@ -737,11 +737,18 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   .tools {
     grid-template-columns: 1fr;
   }
+
+  .city-cards-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media(min-width: 768px) {
   .tools {
     grid-template-columns: 1fr 1fr;
+  }
+  .city-cards-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -749,11 +756,19 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   .tools {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .city-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media(min-width: 1200px) {
   .tools {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .city-cards-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
