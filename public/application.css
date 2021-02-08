@@ -188,16 +188,17 @@ mark:hover {
 
 .left-sidebar {
   width: 20%;
-  height: 95vh;
+  /*height: 94vh;*/
   padding: 0 0 0 16px;
   margin-top: 16px;
+  margin-bottom: 16px;
   border-right: 1px solid #3D4145;
   /*background-color:orange;*/
 }
 
 .flip-box {
   background-color: transparent;
-  width: 93%;
+  width: 94%;
   height: 248px;
   /*border: 1px solid #3D4145;*/
   perspective: 1000px;
@@ -257,7 +258,7 @@ mark:hover {
 }
 
 .language-images img {
-  width: 40px;
+  width: 28%;
   border: 1px solid white;
 }
 
@@ -275,7 +276,7 @@ mark:hover {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
-  width: 93%;
+  width: 94%;
 }
 
 .tools-card .tools img {
@@ -740,6 +741,10 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
 
   .city-cards-container {
     grid-template-columns: 1fr;
+  }
+
+  .language-images img {
+    display: none;
   }
 }
 
