@@ -269,7 +269,7 @@ mark:hover {
 }
 
 .tools-card h4 {
-  margin: 18px 0 16px 0;
+  margin: 24px 0 16px 0;
 }
 
 .tools {
@@ -280,7 +280,7 @@ mark:hover {
 }
 
 .tools-card .tools img {
-  width: 42px;
+  width: 40px;
   opacity: 0.5;
     margin: 0 auto;
 }
@@ -307,10 +307,6 @@ mark:hover {
   animation: wiggle 1.5s infinite;
   display: inline-block;
 }
-
-/*#wave:hover {
-  animation: shake 1s;
-}*/
 
 @keyframes wiggle {
     0% { transform: rotate(0deg); }
@@ -686,7 +682,7 @@ mark:hover {
 /*City card*/
 
 .weather-card h4 {
-  margin: 22px 0 8px 8px;
+  margin: 12px 0 8px 8px;
 }
 
 .city-cards-container {
