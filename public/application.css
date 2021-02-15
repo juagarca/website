@@ -101,7 +101,7 @@ mark:hover {
   flex-direction: column;
   /*background-color: yellow;*/
   width: 30%;
-  margin: 16px 8px 8px 0;
+  margin: 8px 8px 8px 0;
   padding-left: 8px;
   border-left: 1px solid #3D4145;
 }
@@ -605,6 +605,10 @@ mark:hover {
 }
 
 /*Music card */
+.music-card {
+  /*border: 1px solid blue;*/
+  height: 55%;
+}
 
 .music-card h4 {
   /*background-color: white;*/
@@ -617,7 +621,8 @@ mark:hover {
   /*background-color: red;*/
   display: flex;
   margin: 8px;
-  height: 50px;
+  /*height: 50px;*/
+  height: 7.5vh;
   color: #74767A;
   border: 1px solid #3D4145;
   background: #161B22;
@@ -650,8 +655,8 @@ mark:hover {
 }
 
 .song-image {
-  width: 48px;
-  height: 48px;
+  width: 7.2vh;
+  height: 7.2vh;
   background-size: cover;
   background-position: center;
   border-right: 1px solid #3D4145;
@@ -680,9 +685,13 @@ mark:hover {
 }
 
 /*City card*/
+.weather-card {
+  /*border: 1px solid red;*/
+  height: 45%;
+}
 
 .weather-card h4 {
-  margin: 12px 0 8px 8px;
+  margin: 8px 0 0 8px;
 }
 
 .city-cards-container {
@@ -696,7 +705,8 @@ mark:hover {
   display: flex;
   color: #74767A;
   border: 1px solid #3D4145;
-  height: 46px;
+  /*height: 46px;*/
+  height: 7.5vh;
   background: #161B22;
   border-radius: 5px;
 }
@@ -708,8 +718,8 @@ mark:hover {
 }
 
 .city-image {
-  width: 44px;
-  height: 44px;
+  width: 7.2vh;
+  height: 7.2vh;
   border-radius: 5px;
   background: black;
   background-size: cover;
