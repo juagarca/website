@@ -195,6 +195,13 @@ mark:hover {
   border-right: 1px solid #3D4145;
   /*background-color:orange;*/
 }
+.top {
+  /*border: 1px solid orange;*/
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: flex-end;
+}
 
 .flip-box {
   background-color: transparent;
@@ -263,8 +270,9 @@ mark:hover {
 }
 
 .tools-card {
-  /*border-top: 1px solid #3D4145;*/
+  /*border: 1px solid red;*/
   /*width: 250px;*/
+  height: 60%;
   margin-bottom: 8px;
 }
 
@@ -280,9 +288,10 @@ mark:hover {
 }
 
 .tools-card .tools img {
-  width: 40px;
+  /*width: 40px;*/
+  height: 5.8vh;
   opacity: 0.5;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .tools-card .tools img:hover {
@@ -752,6 +761,9 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   .language-images img {
     display: none;
   }
+  .weather-card {
+    height: 30vh;
+  }
 }
 
 @media(min-width: 768px) {
@@ -760,6 +772,9 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   }
   .city-cards-container {
     grid-template-columns: 1fr;
+  }
+  .weather-card {
+    height: 30vh;
   }
 }
 
@@ -771,6 +786,9 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   .city-cards-container {
     grid-template-columns: 1fr 1fr;
   }
+  .weather-card {
+    height: 30vh;
+  }
 }
 
 @media(min-width: 1200px) {
@@ -780,6 +798,12 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
 
   .city-cards-container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-height: 700px) {
+  .tools-card h4{
+    margin-top: 48px;
   }
 }
 
