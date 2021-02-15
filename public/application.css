@@ -778,6 +778,13 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   }
 }
 
+@media(max-width: 1500px) {
+
+  .top {
+    height: 38vh;
+  }
+}
+
 @media(min-width: 992px) {
   .tools {
     grid-template-columns: 1fr 1fr 1fr;
@@ -786,6 +793,7 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
   .city-cards-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .weather-card {
     height: 30vh;
   }
@@ -803,7 +811,7 @@ xl: Extra large devices (Large desktops 👉 1200px and up)
 
 @media(min-height: 700px) {
   .tools-card h4{
-    margin-top: 48px;
+    margin-top: 40px;
   }
 }
 
