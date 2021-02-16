@@ -334,7 +334,7 @@ function deleteProjectsAndAddPintpal() {
       <p style="text-align: right;"><mark><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
       <p style="text-align: right;"><mark><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
       <br>
-      <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+      <div style="text-align: center;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
       <br>
       <br>
     </div>`;
@@ -419,7 +419,7 @@ function deleteProjectsAndAddHireMyHound() {
     <p style="text-align: right; color:"><mark><a href="https://hiremyhound.herokuapp.com" target="_blank">Website</a></mark></p>
     <p style="text-align: right;"><mark><a href="https://github.com/juagarca/hire-my-hound" target="_blank">Repo on github</a></mark></p>
     <br>
-    <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+    <div style="text-align: center;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
     <br>
   </div>`;
 
@@ -497,7 +497,7 @@ function deleteProjectsAndAddChat() {
       <p style="text-align: right; color:"><mark><a href="https://chatrailsredux.herokuapp.com" target="_blank">Website</a></mark></p>
       <p style="text-align: right;"><mark><a href="https://github.com/juagarca/chat-rails-redux" target="_blank">Repo on github</a></mark></p>
       <br>
-      <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+      <div style="text-align: center;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
       <br>
     </div>`;
 
@@ -570,7 +570,7 @@ function deleteProjectsAndAddGarage() {
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
       <p style="text-align: right;"><mark><a href="https://github.com/juagarca/garage-redux" target="_blank">Repo on github</a></mark></p>
       <br>
-      <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+      <div style="text-align: center;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
       <br>
     </div>`;
 
