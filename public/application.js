@@ -128,7 +128,7 @@ const summaryHTML =
   <br>
   <p>A software house with a different perspective  👀</p>
   <div class="navigation-button-container" style="margin-left: 488px;">
-    <i class="fas fa-arrow-right navigation-button" id="start" style=""onClick="resetBackgroundMarquee();"></i>
+    <i class="fas fa-arrow-right navigation-button" id="start" onClick="resetBackgroundMarquee();"></i>
   </div>
   <br> <br> <br> <br> <br> <br> <br><br> <br><br><br> <br><br><br> <br><br><br> <br><br>
   <div id="background"></div>
@@ -275,6 +275,10 @@ const projectsHTML =
 
 const projects = document.querySelector(".cards-projects");
 
+//Show project cards function
+function showProjects() {
+  addProjectCards();
+}
 
 //Delete project cards and add PintPal Project
 function deleteProjectCardsAndAddPintPal() {
@@ -329,6 +333,10 @@ function deleteProjectsAndAddPintpal() {
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
       <p style="text-align: right;"><mark><a href="https://www.pintpal.me" target="_blank">Website</a></mark></p>
       <p style="text-align: right;"><mark><a href="https://github.com/odealtry/PintPal" target="_blank">Repo on github</a></mark></p>
+      <br>
+      <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+      <br>
+      <br>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', pintPalHTML);
@@ -410,6 +418,9 @@ function deleteProjectsAndAddHireMyHound() {
     <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
     <p style="text-align: right; color:"><mark><a href="https://hiremyhound.herokuapp.com" target="_blank">Website</a></mark></p>
     <p style="text-align: right;"><mark><a href="https://github.com/juagarca/hire-my-hound" target="_blank">Repo on github</a></mark></p>
+    <br>
+    <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+    <br>
   </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', hireMyHoundHTML);
@@ -485,6 +496,9 @@ function deleteProjectsAndAddChat() {
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
       <p style="text-align: right; color:"><mark><a href="https://chatrailsredux.herokuapp.com" target="_blank">Website</a></mark></p>
       <p style="text-align: right;"><mark><a href="https://github.com/juagarca/chat-rails-redux" target="_blank">Repo on github</a></mark></p>
+      <br>
+      <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+      <br>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', chatHTML);
@@ -555,7 +569,9 @@ function deleteProjectsAndAddGarage() {
       </div>
       <h3 style="text-align: right; font-size: 18px; font-weight: bolder; margin-top: 48px;">Links</h3>
       <p style="text-align: right;"><mark><a href="https://github.com/juagarca/garage-redux" target="_blank">Repo on github</a></mark></p>
-
+      <br>
+      <div style="text-align: right;"><span class="button" style="cursor: pointer; padding: 18px 8px; margin: 0;" onClick="showProjects();">Back</span></div>
+      <br>
     </div>`;
 
   projects.insertAdjacentHTML('beforeEnd', garageHTML);
@@ -679,34 +695,38 @@ function clickEventsForProjectCards() {
   });
 }
 
+function addProjectCards() {
+  // Scroll to top
+  scrollToTop();
+
+  const summary = document.querySelector('.summary');
+  if (summary.classList.contains('show')) {
+    summary.classList.remove('show')
+  }
+  summary.innerHTML = "";
+
+  if (projects.classList.contains('show')) {
+    projects.classList.remove('show');
+  }
+  projects.innerHTML = "";
+  setTimeout(function(){ projects.insertAdjacentHTML('beforeend', projectsHTML); }, 300);
+  setTimeout(function(){ projects.classList.add('show'); }, 300);
+
+  const cv = document.querySelector('.cv-container');
+  if (cv.classList.contains('show')) {
+    cv.classList.remove('show')
+  }
+  cv.innerHTML = "";
+
+  // Setting up click events for cards
+  setTimeout(clickEventsForProjectCards, 300);
+}
+
 //Click event for project buttons
 projectBtns = document.querySelectorAll('.fa-tools');
 projectBtns.forEach((projectBtn) => {
   projectBtn.addEventListener('click', (event) => {
-    // Scroll to top
-    scrollToTop();
-
-    const summary = document.querySelector('.summary');
-    if (summary.classList.contains('show')) {
-      summary.classList.remove('show')
-    }
-    summary.innerHTML = "";
-
-    if (projects.classList.contains('show')) {
-      projects.classList.remove('show');
-    }
-    projects.innerHTML = "";
-    setTimeout(function(){ projects.insertAdjacentHTML('beforeend', projectsHTML); }, 300);
-    setTimeout(function(){ projects.classList.add('show'); }, 300);
-
-    const cv = document.querySelector('.cv-container');
-    if (cv.classList.contains('show')) {
-      cv.classList.remove('show')
-    }
-    cv.innerHTML = "";
-
-    // Setting up click events for cards
-    setTimeout(clickEventsForProjectCards, 300);
+    addProjectCards();
   });
 });
 
